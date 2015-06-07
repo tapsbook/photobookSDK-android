@@ -36,6 +36,9 @@ dependencies {
 Add the following code to initialize the Tapsbook SDK.
 
 ```
+import com.tapsbook.sdk.TapsbookSDK;
+import com.tapsbook.sdk.photos.Asset;
+
 //Product configuration options. coming soon.
 Config config = new Config("yoursite.tapsbook.com");
 ```
@@ -43,8 +46,14 @@ Config config = new Config("yoursite.tapsbook.com");
 Finally, invoke the Tapsbook SDK from your application using one of the following methods.
 
 ```
-TapsbookSDK.launchTapsbook(this, assets);	// Show the photobook builder UI
+//initialize a set of photos to be included in the book.
+ArrayList<Asset> assets = new ArrayList<>();
+Asset asset = new Asset();
+asset.originPath = "your local jpg file path";
+assets.add(asset)
 
+// Create book and Show the photobook UI
+TapsbookSDK.launchTapsbook(this, assets);	
 ```
 
 ### Other Config options

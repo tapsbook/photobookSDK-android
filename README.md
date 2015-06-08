@@ -25,7 +25,7 @@ allprojects {
 }
 ```
 
-Then, add the Tapsbook SDK as a project dependency. Current SDK should be downloaded and unzipped to the library-release folder.
+Then, add the Tapsbook SDK as a project dependency. the SDK binary can be found under library-release folder (included in this repo) you need to include it as a dependency in your project.
 
 ```
 dependencies {
@@ -40,7 +40,7 @@ import com.tapsbook.sdk.TapsbookSDK;
 import com.tapsbook.sdk.photos.Asset;
 
 //Product configuration options. coming soon.
-Config config = new Config("yoursite.tapsbook.com");
+//Config config = new Config("yoursite.tapsbook.com");
 ```
 
 Finally, invoke the Tapsbook SDK from your application using one of the following methods.

@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Toast;
 
+import com.tapsbook.sdk.SaveCallback;
 import com.tapsbook.sdk.TapsbookSDK;
 import com.tapsbook.sdk.photos.Asset;
 
@@ -43,7 +44,14 @@ public class MainActivity extends Activity {
 
     private void loadTapsbookSDK(ArrayList<Asset> assets) {
         if (assets.size() > 0) {
-            TapsbookSDK.launchTapsbook(this, assets);
+            TapsbookSDK.launchTapsbook(this, assets, new SaveCallback() {
+                @Override
+                //Overwrite complete method to invoke your post-product-creation logic
+                //e.g. your own checkout workflow
+                public void complete(String key) {
+                    Toast.makeText(MainActivity.this, key+" Done!", Toast.LENGTH_SHORT).show();
+                }
+            });
         } else {
             Toast.makeText(this, "Please make sure you have some favorite photos ", Toast.LENGTH_SHORT).show();
         }

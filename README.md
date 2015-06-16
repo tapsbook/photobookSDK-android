@@ -30,6 +30,12 @@ Then, add the Tapsbook SDK as a project dependency. the SDK binary can be found 
 ```
 dependencies {
     compile project(':library-release')
+    compile 'com.android.support:recyclerview-v7:21.0.0'
+    compile 'com.jakewharton:butterknife:6.1.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    apt 'com.raizlabs.android:DBFlow-Compiler:2.0.0'
+    compile "com.raizlabs.android:DBFlow-Core:2.0.0"
+    compile "com.raizlabs.android:DBFlow:2.0.0"
 }
 ```
 

@@ -30,4 +30,6 @@ dependencies {
     compile "com.raizlabs.android:DBFlow-Core:2.0.0"
     compile "com.raizlabs.android:DBFlow:2.0.0"
     compile project(':library-release')
+    compile project(':opencv-release')
+    compile 'com.qiniu:qiniu-android-sdk:7.0.6'
 }

@@ -1,15 +1,15 @@
 ## Tapsbook Page Theme Developer Guide
 
 ### Overview
-Tapsbook uses its own template engine to combine a page template metadata and user supplied images, text, and embellishment to form finished book pages. The template metadata is stored in a SQlite DB. Enterprise Account Developers can also customize their own template to be loaded into their final app.
+Tapsbook uses its own template engine to combine page template metadata and user generated images, text, and embellishment to render finished book pages. The template metadata is stored in a SQlite DB that comes with the SDK binary (frequently added with new templates). Enterprise Account Developers can also customize their own template to be loaded into their final app.
 
 The template metadata is organized as a tree structure where 
 
-1. The top level node is "Theme" which creates multiple significantly different page styles. The style differs on page ratio and page color tone. When you want to expose multiple themes to your customers, you can present a theme selection UI to your customer. The default theme loaded in the current SDK is theme.id=200
-2. Each Theme includes multiple page layouts. Page layout dictate how many photos to be arranged on the page, and whether a page is a standard page or a spread page (a spread page is two standard pages combined into one sheet).
-3. Each page layouts include multiple slots, where a slot can be one of the three types: photo slot, text slot and embellishment slot. These slots all have generic properties such as their positions on the page, the content placement relative to the slot etc.
+1. The top level node is <b>"Theme"</b> which creates multiple significantly different page styles. The style differs on page ratio and page color tone. When you want to expose multiple themes to your customers, you can present a theme selection UI to your customer. The default theme loaded in the current SDK is theme.id=200
+2. Each Theme includes multiple <b>page layouts</b>. Page layout dictate how many photos to be arranged on the page, and whether a page is a standard page or a spread page (a spread page is two standard pages combined into one sheet).
+3. Each page layouts include multiple <b>slots</b>, where a slot can be one of the three types: photo slot, text slot and embellishment slot. These slots all have generic properties such as their positions on the page, the content placement relative to the slot etc.
 
-At the run time, when user chooses to auto-generate all book pages, the engine first loads all templates data from a local sqlite database and intelligently match the appropriate page template based on the photo selections 
+At the run time, when user chooses to auto-generate all book pages, the engine first loads all templates data from the default local sqlite database and intelligently match the appropriate page template based on the photo selections 
 
 ### Importing existing theme XML to Tapsbook template DB
 Note: _this section was created based on our developer experience in working with one of our partners, the script provided here is provided AS-IS, we provide no warranty to this script. If you are enterprise client of Tapsbook patform, we can provide services helping you to import your themes to SDK._

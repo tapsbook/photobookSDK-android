@@ -88,7 +88,7 @@ If you have your own template, you can copy it to [NSHomeDirectory()/Library/TBS
 
 <b>Note: This TBTemplate_Default_xx.sqlite template data is the licensed property of Tapsbook, it is only authorized to be used in conjunction with Tapsbook SDK. You are not allowed to alter it for your own purpose. Nor can you export it and use it outside Tapsbook SDK. Doing so will be an copyright violation. If you want to use your own template. You must create your own template by importing a template from your XML or manually create a new template. </b>
 
-### Template DB attribute explanation
+### Template DB attribute reference
 
 When you want to create or edit the template data, you may find the reference table below useful. During the photo book exporting phase (for print or for sharing), we also produce the data in a similar structure.
 

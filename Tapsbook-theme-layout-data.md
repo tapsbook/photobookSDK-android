@@ -1,7 +1,7 @@
 ## Tapsbook Page Theme Developer Guide
 
 ### Overview
-Tapsbook uses our own template engine to combine a page template metadata and user supplied images, text, and embellishment to form finished book pages. The template metadata is stored in a SQlite DB. Enterprise Account Developers can also customize their own template to be loaded into their final app.
+Tapsbook uses its own template engine to combine a page template metadata and user supplied images, text, and embellishment to form finished book pages. The template metadata is stored in a SQlite DB. Enterprise Account Developers can also customize their own template to be loaded into their final app.
 
 The template metadata is organized as a tree structure where 
 

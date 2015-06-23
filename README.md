@@ -29,7 +29,9 @@ Then, add the Tapsbook SDK as a project dependency. the SDK binary can be found 
 
 ```
 dependencies {
-    compile project(':library-release')
+    compile project(':library-release')                 //core SDK
+    compile project(':opencv-release')                  //for page rendering
+    compile 'com.qiniu:qiniu-android-sdk:7.0.6'         //for image upload 
     compile 'com.android.support:recyclerview-v7:21.0.0'
     compile 'com.jakewharton:butterknife:6.1.0'
     compile 'com.squareup.picasso:picasso:2.5.2'
@@ -60,6 +62,14 @@ assets.add(asset)
 
 // Create book and Show the photobook UI
 TapsbookSDK.launchTapsbook(this, assets);	
+TapsbookSDK.launchTapsbook(this, assets, new SaveCallback() {
+    @Override
+    public void complete(String s) {
+        //now the order is complete, launch own checkout activity
+        ....
+    }
+});
+
 ```
 
 ### Other Config options

@@ -1,4 +1,6 @@
-## Update of SDK
+## Update of Tapsbook SDK for Android
+
+If you run into any issues, please contact help at tapsbook.com
 
 Jun 28 Build 104
 - [editing] add feature to support photo edit: crop, scale and resize

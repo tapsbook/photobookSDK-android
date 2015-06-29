@@ -1,4 +1,9 @@
 Update of SDK
+Jun 28 Build 104
+- [editing] add feature to support photo edit: crop, scale and resize
+- [editing] add feature to support photo rotate
+- [output] generate screen size images per page for development
+- [bug-fix] fixed compatibility issue to support Android 4.1
 
 Jun 22 Build 103
 - [output] add JSON raw data as output format

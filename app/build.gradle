@@ -32,4 +32,5 @@ dependencies {
     compile project(':library-release')
     compile project(':opencv-release')
     compile 'com.qiniu:qiniu-android-sdk:7.0.6'
+    compile 'com.edmodo:cropper:1.0.1'
 }

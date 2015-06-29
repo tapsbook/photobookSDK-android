@@ -1,4 +1,5 @@
-Update of SDK
+## Update of SDK
+
 Jun 28 Build 104
 - [editing] add feature to support photo edit: crop, scale and resize
 - [editing] add feature to support photo rotate

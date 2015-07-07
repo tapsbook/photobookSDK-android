@@ -9,7 +9,7 @@ Jul 7 Build 105
 - [new API] photo book listing API that supports retrieve a list of existing photo books.
 - [bug fixes] fixed page number label bug
 - known issue: the JSON output data from the previous build was temperarily disabled as we refactor the model layer, coming back in the next build.
-- Known issue: the drag and drop feature has compatibility issue when run on GenyMotion. please use real android device to test this.
+- Known issue: the drag and drop feature has compatibility issue when run on GenyMotion. please use real android device to test drag and drop feature.
 
 Jun 28 Build 104
 - [editing] add feature to support photo edit: crop, scale and resize

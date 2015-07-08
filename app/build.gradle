@@ -26,9 +26,9 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:21.0.0'
     compile 'com.jakewharton:butterknife:6.1.0'
     compile 'com.squareup.picasso:picasso:2.5.2'
-    apt 'com.raizlabs.android:DBFlow-Compiler:2.0.0'
-    compile "com.raizlabs.android:DBFlow-Core:2.0.0"
-    compile "com.raizlabs.android:DBFlow:2.0.0"
+    apt 'com.raizlabs.android:DBFlow-Compiler:2.1.0'
+    compile "com.raizlabs.android:DBFlow-Core:2.1.0"
+    compile "com.raizlabs.android:DBFlow:2.1.0"
     compile project(':library-release')
     compile project(':opencv-release')
     compile 'com.qiniu:qiniu-android-sdk:7.0.6'

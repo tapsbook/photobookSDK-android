@@ -2,6 +2,14 @@
 
 If you run into any issues, please contact help at tapsbook.com
 
+July 15 Build 106
+- [editing] add feature to show a photo list as placeholder to show unused book photos.
+- [editing] add feature to support delete photo from a page via drag and drop (long hold an image to trigger)
+- [editing] support SDK customer to provide a product logo on the printed output.
+- [bug fixes] fixed bugs related to rearrange page order (drag drop on multi-page view)
+- [bug fixes] fixed bug related to swipe to change page layout feature
+- [performance tuning] fixed various problems causing excessive memory usage.
+
 Jul 7 Build 105
 - [core] revamped page generation engine w/ new algorithms
 - [editing] add feature to support rearrange page order via drag and drop page. To use it, click multi-page view button (bottom left button), then long hold a page to arrange.

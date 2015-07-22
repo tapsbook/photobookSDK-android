@@ -2,6 +2,12 @@
 
 If you run into any issues, please contact help at tapsbook.com
 
+July 22 Build 107
+- [editing] allow user swap photo from slot A to slot B on the same page by drag & drop
+- [editing] add a photo from the list to placeholder slot 
+- [core] add save function to save current book as draft for future edit
+- [core] add the back cover to the UI and show app logo by default
+
 July 15 Build 106
 - [editing] add feature to show a photo list as placeholder to show unused book photos.
 - [editing] add feature to support delete photo from a page via drag and drop (long hold an image to trigger)

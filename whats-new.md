@@ -7,6 +7,7 @@ July 22 Build 107
 - [editing] add a photo from the list to placeholder slot 
 - [core] add save function to save current book as draft for future edit
 - [core] add the back cover to the UI and show app logo by default
+- Known issue, drag and drop the photo A from the list to swap existing photo of a page won't remove A from the list.
 
 July 15 Build 106
 - [editing] add feature to show a photo list as placeholder to show unused book photos.

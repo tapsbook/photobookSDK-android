@@ -4,4 +4,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="sdk_welcome">The fastest way to add photo book creation to your app.</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="stripeKey">sk_test_BQokikJOvBiI2HlWgH4olfQ2</string>
 </resources>

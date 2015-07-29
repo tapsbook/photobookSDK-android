@@ -2,6 +2,14 @@
 
 If you run into any issues, please contact help at tapsbook.com
 
+July 29 Build 108
+- [editing] added usage analytics tracking tool
+- [editing] added gesture based page layout switching tool
+- [core] added demo to show use book listing API
+- [core] added new API params to control book page generation algorithms
+- [bug fix] refactored the page gesture recognizing algorithm to make the UI very responsive
+- 
+
 July 22 Build 107
 - [editing] allow user swap photo from slot A to slot B on the same page by drag & drop
 - [editing] add a photo from the photo list to placeholder slot (to start, long hold a page photo to show the list)

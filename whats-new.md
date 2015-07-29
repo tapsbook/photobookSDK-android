@@ -8,7 +8,6 @@ July 29 Build 108
 - [core] added demo to show use book listing API
 - [core] added new API params to control book page generation algorithms
 - [bug fix] refactored the page gesture recognizing algorithm to make the UI very responsive
-- 
 
 July 22 Build 107
 - [editing] allow user swap photo from slot A to slot B on the same page by drag & drop

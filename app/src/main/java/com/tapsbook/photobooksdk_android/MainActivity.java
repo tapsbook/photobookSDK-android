@@ -7,8 +7,8 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Toast;
 
-import com.tapsbook.sdk.SaveCallback;
 import com.tapsbook.sdk.TapsbookSDK;
+import com.tapsbook.sdk.TapsbookSDKCallback;
 import com.tapsbook.sdk.photos.Asset;
 
 import java.io.File;
@@ -44,7 +44,7 @@ public class MainActivity extends Activity {
 
     private void loadTapsbookSDK(ArrayList<Asset> assets) {
         if (assets.size() > 0) {
-            TapsbookSDK.launchTapsbook(this, assets, new SaveCallback() {
+            TapsbookSDK.launchTapsbook(this, assets, new TapsbookSDKCallback() {
                 @Override
                 public void complete(String s) {
                     Toast.makeText(MainActivity.this, "Book:"+s, Toast.LENGTH_SHORT).show();

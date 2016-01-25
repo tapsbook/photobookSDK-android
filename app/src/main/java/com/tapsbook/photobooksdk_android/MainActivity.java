@@ -4,11 +4,9 @@ import android.app.Activity;
 import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
 import android.widget.Toast;
 
 import com.tapsbook.sdk.TapsbookSDK;
-import com.tapsbook.sdk.TapsbookSDKCallback;
 import com.tapsbook.sdk.photos.Asset;
 
 import java.io.File;
@@ -22,7 +20,6 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
@@ -44,12 +41,7 @@ public class MainActivity extends Activity {
 
     private void loadTapsbookSDK(ArrayList<Asset> assets) {
         if (assets.size() > 0) {
-            TapsbookSDK.launchTapsbook(this, assets, new TapsbookSDKCallback() {
-                @Override
-                public void complete(String s) {
-                    Toast.makeText(MainActivity.this, "Book:"+s, Toast.LENGTH_SHORT).show();
-                }
-            });
+            TapsbookSDK.launchTapsbook(this, assets);
         } else {
             Toast.makeText(this, "Please make sure you have some favorite photos ", Toast.LENGTH_SHORT).show();
         }

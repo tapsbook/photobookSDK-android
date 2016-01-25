@@ -1,1 +1,1 @@
-include ':app', ':library-release', ':opencv-release'
+include ':app', ':library-release', ':opencv-release', ':androidgesturedetectorslib-release'

@@ -2,15 +2,16 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.neenbedankt.android-apt'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "22.0.1"
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
 
     defaultConfig {
         applicationId "com.tapsbook.photobooksdk_android"
-        minSdkVersion 15
-        targetSdkVersion 21
+        minSdkVersion 17
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -18,21 +19,27 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:22.1.1'
-    compile 'com.android.support:recyclerview-v7:21.0.0'
-    compile 'com.google.android.gms:play-services:7.5.0'
-    compile 'com.jakewharton:butterknife:6.1.0'
     apt 'com.raizlabs.android:DBFlow-Compiler:2.1.0'
-    compile "com.raizlabs.android:DBFlow-Core:2.1.0"
-    compile "com.raizlabs.android:DBFlow:2.1.0"
     compile project(':library-release')
     compile project(':opencv-release')
+    compile project(':androidgesturedetectorslib-release')
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'com.google.android.gms:play-services:8.4.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.raizlabs.android:DBFlow-Core:2.1.0'
+    compile 'com.raizlabs.android:DBFlow:2.1.0'
     compile 'com.qiniu:qiniu-android-sdk:7.0.6'
     compile 'com.edmodo:cropper:1.0.1'
     compile 'com.github.bumptech.glide:glide:3.6.1'
     compile 'com.google.code.gson:gson:2.3'
+    compile 'com.booking:rtlviewpager:1.0.0@aar'
+    compile 'com.android.support:multidex:1.0.1'
 }

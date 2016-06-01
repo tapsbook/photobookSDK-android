@@ -31,13 +31,18 @@ Then, add the Tapsbook SDK as a project dependency. the SDK binary can be found 
 dependencies {
     compile project(':library-release')                 //core SDK
     compile project(':opencv-release')                  //for page rendering
-    compile 'com.qiniu:qiniu-android-sdk:7.0.6'         //for image upload 
+    compile 'com.qiniu:qiniu-android-sdk:7.0.6'         //for image upload
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.2@aar') { //for crashlytics
+            transitive = true;
+    }
     compile 'com.android.support:recyclerview-v7:21.0.0'
     compile 'com.jakewharton:butterknife:6.1.0'
-    compile 'com.squareup.picasso:picasso:2.5.2'
-    apt 'com.raizlabs.android:DBFlow-Compiler:2.0.0'
-    compile "com.raizlabs.android:DBFlow-Core:2.0.0"
-    compile "com.raizlabs.android:DBFlow:2.0.0"
+    apt 'com.raizlabs.android:DBFlow-Compiler:2.2.1'
+    compile 'com.raizlabs.android:DBFlow-Core:2.2.1'
+    compile 'com.raizlabs.android:DBFlow:2.2.1'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.google.android.gms:play-services:7.5.0'
+
 }
 ```
 

@@ -18,6 +18,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.util.List;
 
 public class App extends MultiDexApplication implements TapsbookSDKCallback {
 
@@ -46,7 +47,7 @@ public class App extends MultiDexApplication implements TapsbookSDKCallback {
     }
 
     @Override
-    public void complete(String s, LineItem lineItem) {
+    public void complete(String s, LineItem lineItem, List<String> list) {
         Toast.makeText(this, "saved /mnt/sdcard/Tapsbook/album.json", Toast.LENGTH_SHORT).show();
         Gson gson = new Gson();
         String json = gson.toJson(lineItem);

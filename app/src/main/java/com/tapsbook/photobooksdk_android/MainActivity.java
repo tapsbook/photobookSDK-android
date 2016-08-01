@@ -41,7 +41,7 @@ public class MainActivity extends Activity {
 
     private void loadTapsbookSDK(ArrayList<Asset> assets) {
         if (assets.size() > 0) {
-            TapsbookSDK.launchTapsbook(this, assets,App.getInstance(),null,null,null);
+            TapsbookSDK.launchTapsbook(this, assets, App.getInstance(), null, null, null);
         } else {
             Toast.makeText(this, "Please make sure you have some favorite photos ", Toast.LENGTH_SHORT).show();
         }

@@ -8,8 +8,10 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
+import com.tapsbook.sdk.AlbumManager;
 import com.tapsbook.sdk.TapsbookSDK;
 import com.tapsbook.sdk.TapsbookSDKCallback;
+import com.tapsbook.sdk.model.Album;
 import com.tapsbook.sdk.services.domain.LineItem;
 import com.tapsbook.sdk.utils.Utils;
 
@@ -23,6 +25,7 @@ import java.util.List;
 public class App extends MultiDexApplication implements TapsbookSDKCallback {
 
     private static App instance;
+
     public static App getInstance() {
         return instance;
     }
@@ -47,10 +50,30 @@ public class App extends MultiDexApplication implements TapsbookSDKCallback {
     }
 
     @Override
-    public void complete(String s, LineItem lineItem, List<String> list) {
+    public void complete(String s, LineItem lineItem, List<String> imagePaths) {
+        if (null != imagePaths && imagePaths.size() != 0) {
+            String path = imagePaths.get(0);
+            File file = new File(path);
+            if (file.exists()) {
+                String parent = file.getParent();
+                Toast.makeText(this, "images save in file " + parent, Toast.LENGTH_LONG).show();
+            }
+        }
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                saveJson();
+            }
+        }).start();
         Toast.makeText(this, "saved /mnt/sdcard/Tapsbook/album.json", Toast.LENGTH_SHORT).show();
+
+    }
+
+    private void saveJson() {
         Gson gson = new Gson();
-        String json = gson.toJson(lineItem);
+        Album currentAlbum = AlbumManager.getInstance().getCurrentAlbum();
+        String json = gson.toJson(currentAlbum);
         byte[] txt = json.getBytes();
 
         try {

@@ -32,9 +32,11 @@ public class MainActivity extends Activity {
     private ArrayList<Asset> exportPhotos() {
         ArrayList<Asset> assets = new ArrayList<>();
         for (String file : getAssetsFiles()) {
-            Asset asset = new Asset();
-            asset.originPath = getAssetsImageCacheFilePath(file);
-            assets.add(asset);
+            if (file.endsWith("jpg")) {
+                Asset asset = new Asset();
+                asset.originPath = getAssetsImageCacheFilePath(file);
+                assets.add(asset);
+            }
         }
         return assets;
     }
@@ -48,26 +50,23 @@ public class MainActivity extends Activity {
     }
 
     private String getAssetsImageCacheFilePath(String file) {
-        if (file.endsWith("jpg")) {
-            File f = new File(getCacheDir() + file);
-            if (!f.exists()) {
-                try {
-                    InputStream is = getAssets().open(file);
-                    int size = is.available();
-                    byte[] buffer = new byte[size];
-                    is.read(buffer);
-                    is.close();
+        File f = new File(getCacheDir() + file);
+        if (!f.exists()) {
+            try {
+                InputStream is = getAssets().open(file);
+                int size = is.available();
+                byte[] buffer = new byte[size];
+                is.read(buffer);
+                is.close();
 
-                    FileOutputStream fos = new FileOutputStream(f);
-                    fos.write(buffer);
-                    fos.close();
-                } catch (Exception e) {
-                    throw new RuntimeException(e);
-                }
+                FileOutputStream fos = new FileOutputStream(f);
+                fos.write(buffer);
+                fos.close();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
             }
-            return f.getPath();
         }
-        return null;
+        return f.getPath();
     }
 
     private String[] getAssetsFiles() {

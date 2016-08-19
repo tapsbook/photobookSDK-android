@@ -1,10 +1,9 @@
 package com.tapsbook.photobooksdk_android;
 
 import android.content.Context;
-import android.os.Environment;
+import android.os.Handler;
 import android.support.multidex.MultiDex;
 import android.support.multidex.MultiDexApplication;
-import android.util.Log;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
@@ -13,7 +12,6 @@ import com.tapsbook.sdk.TapsbookSDK;
 import com.tapsbook.sdk.TapsbookSDKCallback;
 import com.tapsbook.sdk.model.Album;
 import com.tapsbook.sdk.services.domain.LineItem;
-import com.tapsbook.sdk.utils.Utils;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -23,8 +21,10 @@ import java.io.OutputStream;
 import java.util.List;
 
 public class App extends MultiDexApplication implements TapsbookSDKCallback {
+    private final static String ASSETS_ROOT_PATH = "file:///android_asset/";
 
     private static App instance;
+    private Handler handler = new Handler();
 
     public static App getInstance() {
         return instance;
@@ -34,6 +34,8 @@ public class App extends MultiDexApplication implements TapsbookSDKCallback {
     public void onCreate() {
         super.onCreate();
         TapsbookSDK.initialize("REPLACE_ME", this);
+        //this method will set display logo and print logo
+        TapsbookSDK.setAppLogo(ASSETS_ROOT_PATH + "logo_display.png", "");
         instance = this;
     }
 
@@ -66,7 +68,6 @@ public class App extends MultiDexApplication implements TapsbookSDKCallback {
                 saveJson();
             }
         }).start();
-        Toast.makeText(this, "saved /mnt/sdcard/Tapsbook/album.json", Toast.LENGTH_SHORT).show();
 
     }
 
@@ -94,6 +95,13 @@ public class App extends MultiDexApplication implements TapsbookSDKCallback {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+        } finally {
+            handler.post(new Runnable() {
+                @Override
+                public void run() {
+                    Toast.makeText(App.getInstance(), "saved /mnt/sdcard/Tapsbook/album.json", Toast.LENGTH_SHORT).show();
+                }
+            });
         }
     }
 }

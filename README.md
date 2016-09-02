@@ -66,7 +66,7 @@ asset.originPath = "your local jpg file path";
 assets.add(asset)
 
 // Create book and Show the photobook UI
-TapsbookSDK.launchTapsbook(this, assets);	
+TapsbookSDK.launchTapsbook(this, assets);
 TapsbookSDK.launchTapsbook(this, assets, new SaveCallback() {
     @Override
     public void complete(String s) {
@@ -88,3 +88,48 @@ These options allows you to personalize the app experience.
 ### Theming
 
 Tapsbook uses own theme rather than inheriting the theme of the hosting app.
+
+
+### Doc
+* To operate the album, please use `AlbumManager`,to call `AlbumManager.getInstance()`
+
+```
+//get saved album
+AlbumManager.getInstance().getSavedAlbums()
+
+//save currentAlbum
+AlbumManager.getInstance().saveCurrentAlbum()
+
+//delete currentAlbum,can delete by album id only
+AlbumManager.getInstance().deleteCurrentAlbum(String albumId)
+
+//get currentAlbum
+AlbumManager.getInstance().getCurrentAlbum()
+
+```
+
+* To launch SDK
+
+```
+/**
+ * launch with assets to create new one
+ *
+ * @param context
+ * @param assets the assets
+ */
+TapsbookSDK.launchTapsbook(Context context, List<Asset> assets)
+
+
+/**
+ * launch with the exist album
+ *
+ * @param context
+ * @param albumId album id
+ * @param callback pay order success callback
+ * @param sku sku, for print
+ */
+TapsbookSDK.launchTapsbook(Context context, TapsbookSDKCallback callback, String albumId, String sku)
+
+```
+
+

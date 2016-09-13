@@ -52,8 +52,12 @@ Add the following code to initialize the Tapsbook SDK.
 import com.tapsbook.sdk.TapsbookSDK;
 import com.tapsbook.sdk.photos.Asset;
 
-//Product configuration options. coming soon.
-//Config config = new Config("yoursite.tapsbook.com");
+//Product configuration options
+TapsbookSDK.config.generate.maxNumberOfPages = 40;
+TapsbookSDK.config.generate.minNumberOfPages = 20;
+
+...
+more options please read our doc
 ```
 
 Finally, invoke the Tapsbook SDK from your application using one of the following methods.
@@ -63,13 +67,15 @@ Finally, invoke the Tapsbook SDK from your application using one of the followin
 ArrayList<Asset> assets = new ArrayList<>();
 Asset asset = new Asset();
 asset.originPath = "your local jpg file path";
+if use online images,you should use like this:
+asset.urlPath = "your online jpg file path";
 assets.add(asset)
 
 // Create book and Show the photobook UI
 TapsbookSDK.launchTapsbook(this, assets);
-TapsbookSDK.launchTapsbook(this, assets, new SaveCallback() {
+TapsbookSDK.launchTapsbook(this, assets, new TapsbookSDKCallback() {
     @Override
-    public void complete(String s) {
+    public void complete(String s, LineItem lineItem, List<String> imagePaths) {
         //now the order is complete, launch own checkout activity
         ....
     }
@@ -112,23 +118,30 @@ AlbumManager.getInstance().getCurrentAlbum()
 
 ```
 /**
- * launch with assets to create new one
+ * Create a new album with photo specified as {@link Asset}
  *
- * @param context
- * @param assets the assets
+ * @param context the Context used to launch activity
+ * @param assets the array list of {@link Asset} to be used to pass the photo list path
  */
-TapsbookSDK.launchTapsbook(Context context, List<Asset> assets)
-
+ public static void launchTapsbook(Context context, List<Asset> assets) {
+    
+/**
+ * Open an existing album with a given albumID
+ *
+ * @param context the Context used to launch activity
+ * @param albumId the album id of current album
+ */
+ public static void launchTapsbook(Context context, String albumId) {
 
 /**
- * launch with the exist album
+ * Open an existing album with a given albumID and have access to the callback when user completed the editing.
  *
- * @param context
- * @param albumId album id
- * @param callback pay order success callback
- * @param sku sku, for print
+ * @param context the Context used to launch activity
+ * @param callback the callback when upload images complete
+ * @param albumId the album id of current album
+ * @param sku the sku of current product
  */
-TapsbookSDK.launchTapsbook(Context context, TapsbookSDKCallback callback, String albumId, String sku)
+public static void launchTapsbook(@NotNull Context context,@NotNull TapsbookSDKCallback callback, @NotNull String albumId, @Nullable String sku) {
 
 ```
 

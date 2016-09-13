@@ -53,9 +53,11 @@ import com.tapsbook.sdk.TapsbookSDK;
 import com.tapsbook.sdk.photos.Asset;
 
 //Product configuration options
-TapsbookSDK.config.generate.maxNumberOfPages = 40;
-TapsbookSDK.config.generate.minNumberOfPages = 20;
-
+TapsbookSDK.config.generate.maxNumberOfPages = 40;//set max pages
+TapsbookSDK.config.generate.minNumberOfPages = 20;//set min pages
+TapsbookSDK.config.generate.generateGivenSizeImages = true;//set generate the 800x400 image
+TapsbookSDK.config.generate.isStartPageOnLeft = true; //set album start from left
+TapsbookSDK.config.generate.kTBProductPreferredTheme = 200; //set product theme
 ...
 more options please read our doc
 ```
@@ -74,8 +76,14 @@ assets.add(asset)
 // Create book and Show the photobook UI
 TapsbookSDK.launchTapsbook(this, assets);
 TapsbookSDK.launchTapsbook(this, assets, new TapsbookSDKCallback() {
+    /**
+     *
+     * @param key the key
+     * @param item service needed content
+     * @param imagePaths generated images path list if set true
+     */
     @Override
-    public void complete(String s, LineItem lineItem, List<String> imagePaths) {
+    public void complete(String key, LineItem lineItem, List<String> imagePaths) {
         //now the order is complete, launch own checkout activity
         ....
     }

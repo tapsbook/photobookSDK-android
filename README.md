@@ -90,7 +90,7 @@ AlbumManager.getInstance().getCurrentAlbum()
 
 ```
 
-### Doc
+### Documentation
 The full JavaDoc of the TapsbookSDK android version can be found here: http://tapsbook.com/doc-android/index.html?com/tapsbook/sdk/TapsbookSDK.html
 
 
@@ -105,8 +105,12 @@ To get started, you will need to:
 
 What if you have your own print workflow and print facility? No worries! The key design philosophy of TapsbookSDK is OPEN! TapsbookSDK can be easily integrated with exiting modern printing workflow quickly. TapsbookSDK allows many top print companies to create their own branded photo book mobile apps that connets to their own fulfillment capabilities. 
 
+### Other platforms
+
+TapsbookSDK also has its iOS sibling, [TapsbookSDK for iOS](https://github.com/tapsbook/photobookSDK-iOS), same cool stuff.
+
 ### Contact us
 
-Our team is based in Raleigh, NC and office in Beijing and Xian in Chian. We love to hear from you, drop us an email support@tapsbook.com
+Our team is based in Raleigh, NC and office in Beijing and Xian in China. We love to hear from you, drop us an email support@tapsbook.com
 
 

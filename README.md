@@ -94,7 +94,11 @@ AlbumManager.getInstance().getCurrentAlbum()
 The full JavaDoc of the TapsbookSDK android version can be found here: http://tapsbook.com/doc-android/index.html?com/tapsbook/sdk/TapsbookSDK.html
 
 
-### Backand and Fulfillment options
+### Backend and Fulfillment options
+
+Two options:
+1. Use TapsbookSDK built in backend and integrated vendors
+2. Use your own print workflow
 
 TapsbookSDK has built its world wide network of print partners serving AP, Europe and North America markets, and this will be your quickest option to create a turnkey photo merchandising solution.. In the default mode, the SDK connects to the backend system via REST API to manage the product SKUs and photo book printing workflow by working with our photo book print partners and shipping service providers to offer you 
 
@@ -103,7 +107,7 @@ To get started, you will need to:
 1. Sign up for a free tapsBook developer account: Go to http://dashboard.tapsbook.com to sign up.(invitation only, shoot us an email support@tapsbook.com)
 2. Register your app and get an app key.
 
-What if you have your own print workflow and print facility? No worries! The key design philosophy of TapsbookSDK is OPEN! TapsbookSDK can be easily integrated with exiting modern printing workflow quickly. TapsbookSDK allows many top print companies to create their own branded photo book mobile apps that connets to their own fulfillment capabilities. 
+*What if you have your own print workflow and print facility?* No worries! The key design philosophy of TapsbookSDK is OPEN! TapsbookSDK can be easily integrated with exiting modern printing workflow quickly. TapsbookSDK allows many top print companies to create their own branded photo book mobile apps that connets to their own fulfillment capabilities. 
 
 ### Other platforms
 

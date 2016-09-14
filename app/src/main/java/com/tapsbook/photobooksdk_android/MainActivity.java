@@ -26,6 +26,12 @@ public class MainActivity extends Activity {
 
     public void openBook(View view) {
         ArrayList<Asset> assets = exportPhotos();
+        // set max page
+        TapsbookSDK.config.generate.maxNumberOfPages = 40;
+        // set min page
+        TapsbookSDK.config.generate.minImagesPerPage = 20;
+        // generate 800 * 400 image
+        TapsbookSDK.config.generate.generateGivenSizeImages = true;
         loadTapsbookSDK(assets);
     }
 
@@ -34,7 +40,9 @@ public class MainActivity extends Activity {
         for (String file : getAssetsFiles()) {
             if (file.endsWith("jpg")) {
                 Asset asset = new Asset();
+                asset.identifier = "your image id";
                 asset.originPath = getAssetsImageCacheFilePath(file);
+                asset.urlPath = "http://fake.me/" + System.currentTimeMillis() + ".jpg";
                 assets.add(asset);
             }
         }

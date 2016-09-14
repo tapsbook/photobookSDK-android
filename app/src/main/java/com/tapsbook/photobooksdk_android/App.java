@@ -20,6 +20,8 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.List;
 
+import static android.R.attr.path;
+
 public class App extends MultiDexApplication implements TapsbookSDKCallback {
     private final static String ASSETS_ROOT_PATH = "file:///android_asset/";
 
@@ -73,6 +75,7 @@ public class App extends MultiDexApplication implements TapsbookSDKCallback {
 
     private void saveJson() {
         Gson gson = new Gson();
+        // get current album json data
         Album currentAlbum = AlbumManager.getInstance().getCurrentAlbum();
         String json = gson.toJson(currentAlbum);
         byte[] txt = json.getBytes();

@@ -1,165 +1,198 @@
-````
+```
 {
-  "album_title": "1",
+  "album_title": "Test",
   "allPhotoList": [
     {
       "CLASSNAME": "Image",
       "INSTANCE": {
-        "imageDisplayPath": "/storage/emulated/0/Download/1107057023f67f2898l.jpg",
+        "identifier": "1473824176502",
+        "imageDisplayPath": "/storage/emulated/0/Download/111733478517d8aa39o.jpg",
+        "imageUrlPath": "Http://testImage.1473824176502.jpg",
         "isPlaceHolder": false
       }
     },
     {
       "CLASSNAME": "Image",
       "INSTANCE": {
-        "imageDisplayPath": "/storage/emulated/0/Download/1135236405fc949897l.jpg",
+        "identifier": "1473824176502",
+        "imageDisplayPath": "/storage/emulated/0/Download/1002658899891d9a90.jpg",
+        "imageUrlPath": "Http://testImage.1473824176502.jpg",
         "isPlaceHolder": false
       }
     },
     {
       "CLASSNAME": "Image",
       "INSTANCE": {
-        "imageDisplayPath": "/storage/emulated/0/Download/1175603958fc946641l.jpg",
+        "identifier": "1473824176502",
+        "imageDisplayPath": "/storage/emulated/0/Download/1169484977873b59fbo.jpg",
+        "imageUrlPath": "Http://testImage.1473824176502.jpg",
         "isPlaceHolder": false
       }
     },
     {
       "CLASSNAME": "Image",
       "INSTANCE": {
-        "imageDisplayPath": "/storage/emulated/0/Download/1175603978f1a46b93l.jpg",
+        "identifier": "1473824176502",
+        "imageDisplayPath": "/storage/emulated/0/Download/1129621481060cac6ao.jpg",
+        "imageUrlPath": "Http://testImage.1473824176502.jpg",
         "isPlaceHolder": false
       }
     },
     {
       "CLASSNAME": "Image",
       "INSTANCE": {
-        "imageDisplayPath": "/storage/emulated/0/Download/1175603960eee597c0l.jpg",
+        "identifier": "1473824176502",
+        "imageDisplayPath": "/storage/emulated/0/Download/1122041990350f246ao.jpg",
+        "imageUrlPath": "Http://testImage.1473824176502.jpg",
         "isPlaceHolder": false
       }
     },
     {
       "CLASSNAME": "Image",
       "INSTANCE": {
-        "imageDisplayPath": "/storage/emulated/0/Download/1175603959bc27993al.jpg",
+        "identifier": "1473824176502",
+        "imageDisplayPath": "/storage/emulated/0/Download/12663054945770.jpg",
+        "imageUrlPath": "Http://testImage.1473824176502.jpg",
         "isPlaceHolder": false
       }
     },
     {
       "CLASSNAME": "Image",
       "INSTANCE": {
-        "imageDisplayPath": "/storage/emulated/0/Download/1175770027c487b51bl.jpg",
+        "identifier": "1473824176502",
+        "imageDisplayPath": "/storage/emulated/0/Download/12779639539974.jpg",
+        "imageUrlPath": "Http://testImage.1473824176502.jpg",
         "isPlaceHolder": false
       }
     },
     {
       "CLASSNAME": "Image",
       "INSTANCE": {
-        "imageDisplayPath": "/storage/emulated/0/Download/10045578023ecf4e62.jpg",
+        "identifier": "1473824176502",
+        "imageDisplayPath": "/storage/emulated/0/Download/12855044835266.jpg",
+        "imageUrlPath": "Http://testImage.1473824176502.jpg",
         "isPlaceHolder": false
       }
     },
     {
       "CLASSNAME": "Image",
       "INSTANCE": {
-        "imageDisplayPath": "/storage/emulated/0/Download/11318289606ecd84fbl.jpg",
+        "identifier": "1473824176502",
+        "imageDisplayPath": "/storage/emulated/0/Download/12891293309162.jpg",
+        "imageUrlPath": "Http://testImage.1473824176502.jpg",
         "isPlaceHolder": false
       }
     },
     {
       "CLASSNAME": "Image",
       "INSTANCE": {
-        "imageDisplayPath": "/storage/emulated/0/Download/11458795009c5a22a9l.jpg",
+        "identifier": "1473824176502",
+        "imageDisplayPath": "/storage/emulated/0/Download/1120418073ce8ae1f8o.jpg",
+        "imageUrlPath": "Http://testImage.1473824176502.jpg",
         "isPlaceHolder": false
       }
     },
     {
       "CLASSNAME": "Image",
       "INSTANCE": {
-        "imageDisplayPath": "/storage/emulated/0/Download/11352364058d558448l.jpg",
+        "identifier": "1473824176502",
+        "imageDisplayPath": "/storage/emulated/0/Download/1134635179f95c84dbo.jpg",
+        "imageUrlPath": "Http://testImage.1473824176502.jpg",
         "isPlaceHolder": false
       }
     },
     {
       "CLASSNAME": "Image",
       "INSTANCE": {
-        "imageDisplayPath": "/storage/emulated/0/Download/11325613211c2b22a3l.jpg",
+        "identifier": "1473824176502",
+        "imageDisplayPath": "/storage/emulated/0/Download/12976312754550.jpg",
+        "imageUrlPath": "Http://testImage.1473824176502.jpg",
         "isPlaceHolder": false
       }
     },
     {
       "CLASSNAME": "Image",
       "INSTANCE": {
-        "imageDisplayPath": "/storage/emulated/0/Download/11482029469b200be9l.jpg",
+        "identifier": "1473824176502",
+        "imageDisplayPath": "/storage/emulated/0/Download/test22.png",
+        "imageUrlPath": "Http://testImage.1473824176502.jpg",
         "isPlaceHolder": false
       }
     },
     {
       "CLASSNAME": "Image",
       "INSTANCE": {
-        "imageDisplayPath": "/storage/emulated/0/Download/117560395681ef434al.jpg",
+        "identifier": "1473824176502",
+        "imageDisplayPath": "/storage/emulated/0/Download/1178008896a777569eo.jpg",
+        "imageUrlPath": "Http://testImage.1473824176503.jpg",
         "isPlaceHolder": false
       }
     },
     {
       "CLASSNAME": "Image",
       "INSTANCE": {
-        "imageDisplayPath": "/storage/emulated/0/Download/11492473309b39a0c2l.jpg",
+        "identifier": "1473824176503",
+        "imageDisplayPath": "/storage/emulated/0/Download/10014890582b3f2ddc.jpg",
+        "imageUrlPath": "Http://testImage.1473824176503.jpg",
         "isPlaceHolder": false
       }
     },
     {
       "CLASSNAME": "Image",
       "INSTANCE": {
-        "imageDisplayPath": "/storage/emulated/0/Download/1005472405374c4121.jpg",
+        "identifier": "1473824176503",
+        "imageDisplayPath": "/storage/emulated/0/Download/10062279486ee6b3bd.jpg",
+        "imageUrlPath": "Http://testImage.1473824176503.jpg",
         "isPlaceHolder": false
       }
     },
     {
       "CLASSNAME": "Image",
       "INSTANCE": {
-        "imageDisplayPath": "/storage/emulated/0/Download/11581384030f1de058l.jpg",
+        "identifier": "1473824176503",
+        "imageDisplayPath": "/storage/emulated/0/Download/11008363430f529685o.jpg",
+        "imageUrlPath": "Http://testImage.1473824176503.jpg",
         "isPlaceHolder": false
       }
     },
     {
       "CLASSNAME": "Image",
       "INSTANCE": {
-        "imageDisplayPath": "/storage/emulated/0/Download/1131828958429b2a8cl.jpg",
+        "identifier": "1473824176503",
+        "imageDisplayPath": "/storage/emulated/0/Download/11339568772ff0eed1o.jpg",
+        "imageUrlPath": "Http://testImage.1473824176503.jpg",
         "isPlaceHolder": false
       }
     },
     {
       "CLASSNAME": "Image",
       "INSTANCE": {
-        "imageDisplayPath": "/storage/emulated/0/Download/1136459168378a0b84l.jpg",
+        "identifier": "1473824176503",
+        "imageDisplayPath": "/storage/emulated/0/Download/11652415538e3d31d9o.jpg",
+        "imageUrlPath": "Http://testImage.1473824176503.jpg",
         "isPlaceHolder": false
       }
     },
     {
       "CLASSNAME": "Image",
       "INSTANCE": {
-        "imageDisplayPath": "/storage/emulated/0/Download/11492472860765e43al.jpg",
-        "isPlaceHolder": false
-      }
-    },
-    {
-      "CLASSNAME": "Image",
-      "INSTANCE": {
-        "imageDisplayPath": "/storage/emulated/0/Download/12606311428909.jpg",
+        "identifier": "1473824176503",
+        "imageDisplayPath": "/storage/emulated/0/Download/11997367382ead9baeo.jpg",
+        "imageUrlPath": "Http://testImage.1473824176503.jpg",
         "isPlaceHolder": false
       }
     }
   ],
   "allowGenericLayout": false,
   "bookPageUrls": [],
-  "date": "Jun 20, 2016 5:49:20 PM",
+  "date": "Sep 14, 2016 11:36:17 AM",
   "disabled": false,
-  "headerCover": "/storage/emulated/0/Android/data/com.tapsbook.app/cache/2a88e586b32a8790cacc3f778d2a513d.jpg",
-  "id": "1",
+  "headerCover": "/storage/emulated/0/Android/data/com.tapsbook.app/cover/a518b0d3197bb7fe95cb36bcd388b6a.jpg",
+  "id": "0",
   "isLoaded": false,
   "isOrdered": false,
   "isStartFromLeft": false,
-  "name": "06/20/2016 17:49:20 pm",
+  "name": "09/14/2016 11:36:17 上午",
   "needInsideCoverPages": true,
   "pageList": [
     {
@@ -169,6 +202,7 @@
       "isFirstPage": false,
       "isFrontPageLayout": false,
       "isSpread": true,
+      "pageUrl": "",
       "printInfoId": 4,
       "size": {
         "height": 87500,
@@ -183,7 +217,9 @@
           "content": {
             "CLASSNAME": "Image",
             "INSTANCE": {
-              "imageDisplayPath": "/storage/emulated/0/Download/1107057023f67f2898l.jpg",
+              "identifier": "1473824176502",
+              "imageDisplayPath": "/storage/emulated/0/Download/111733478517d8aa39o.jpg",
+              "imageUrlPath": "Http://testImage.1473824176502.jpg",
               "isPlaceHolder": false
             }
           },
@@ -202,6 +238,7 @@
           "frameWidthOrScale": 0,
           "id": 10000002,
           "layoutId": 0,
+          "rotateDegrees": 0,
           "rotation": 0,
           "size": {
             "height": 72057,
@@ -227,10 +264,9 @@
               "backgroundColor": 0,
               "fontSize": 0,
               "foregroundColor": 0,
-              "imagePath": "/storage/emulated/0/Tapsbook/5c7dd36576d69a3eacd24e7d5b2787/c4ca4238a0b92382dcc509a6f75849b.jpg",
               "strokeColor": 0,
               "strokeWidth": 0,
-              "text": "1",
+              "text": "Test",
               "isPlaceHolder": false
             }
           },
@@ -249,6 +285,7 @@
           "frameWidthOrScale": 0,
           "id": 10000003,
           "layoutId": 0,
+          "rotateDegrees": 0,
           "rotation": 0,
           "size": {
             "height": 5502,
@@ -265,938 +302,8 @@
       ],
       "stdRatioType": 0,
       "themeId": 0,
-      "type": "FRONT_COVER"
-    },
-    {
-      "backgroundId": 0,
-      "id": 2000,
-      "index": 0,
-      "isFirstPage": true,
-      "isFrontPageLayout": true,
-      "isSpread": false,
-      "printInfoId": 0,
-      "size": {
-        "height": 90000,
-        "width": 90000
-      },
-      "slots": [
-        {
-          "center": {
-            "x": 135000,
-            "y": 45000
-          },
-          "content": {
-            "CLASSNAME": "Image",
-            "INSTANCE": {
-              "imageDisplayPath": "/storage/emulated/0/Download/1107057023f67f2898l.jpg",
-              "isPlaceHolder": false
-            }
-          },
-          "contentOffset": {
-            "x": 0,
-            "y": 0
-          },
-          "contentRotation": 0,
-          "contentSize": {
-            "height": 48000,
-            "width": 48000
-          },
-          "contentType": 0,
-          "frameColor": 0,
-          "frameId": 0,
-          "frameWidthOrScale": 0,
-          "id": 20000,
-          "layoutId": 0,
-          "rotation": 0,
-          "size": {
-            "height": 48000,
-            "width": 48000
-          },
-          "textAlignment": 0,
-          "textBackgroundColor": 0,
-          "textFontSize": 0,
-          "textForegroundColor": 0,
-          "textStrokeColor": 0,
-          "textStrokeWidth": 0,
-          "zPosition": 0
-        }
-      ],
-      "stdRatioType": 4,
-      "themeId": 200,
-      "thumbPath": "Tapsbook/Layouts/12x12/layout_2000.png",
-      "type": "NORMAL"
-    },
-    {
-      "backgroundId": 0,
-      "id": 3013,
-      "index": 0,
-      "isFirstPage": false,
-      "isFrontPageLayout": false,
-      "isSpread": true,
-      "printInfoId": 0,
-      "size": {
-        "height": 90000,
-        "width": 180000
-      },
-      "slots": [
-        {
-          "center": {
-            "x": 70081,
-            "y": 25819
-          },
-          "content": {
-            "CLASSNAME": "Image",
-            "INSTANCE": {
-              "imageDisplayPath": "/storage/emulated/0/Download/1135236405fc949897l.jpg",
-              "isPlaceHolder": false
-            }
-          },
-          "contentOffset": {
-            "x": 0,
-            "y": 0
-          },
-          "contentRotation": 0,
-          "contentSize": {
-            "height": 36885,
-            "width": 36885
-          },
-          "contentType": 0,
-          "frameColor": 0,
-          "frameId": 0,
-          "frameWidthOrScale": 0,
-          "id": 22062,
-          "layoutId": 0,
-          "rotation": 0,
-          "size": {
-            "height": 36885,
-            "width": 36885
-          },
-          "textAlignment": 0,
-          "textBackgroundColor": 0,
-          "textFontSize": 0,
-          "textForegroundColor": 0,
-          "textStrokeColor": 0,
-          "textStrokeWidth": 0,
-          "zPosition": 0
-        },
-        {
-          "center": {
-            "x": 109918,
-            "y": 25819
-          },
-          "content": {
-            "CLASSNAME": "Image",
-            "INSTANCE": {
-              "imageDisplayPath": "/storage/emulated/0/Download/1175603958fc946641l.jpg",
-              "isPlaceHolder": false
-            }
-          },
-          "contentOffset": {
-            "x": 0,
-            "y": 0
-          },
-          "contentRotation": 0,
-          "contentSize": {
-            "height": 36885,
-            "width": 36885
-          },
-          "contentType": 0,
-          "frameColor": 0,
-          "frameId": 0,
-          "frameWidthOrScale": 0,
-          "id": 22063,
-          "layoutId": 0,
-          "rotation": 0,
-          "size": {
-            "height": 36885,
-            "width": 36885
-          },
-          "textAlignment": 0,
-          "textBackgroundColor": 0,
-          "textFontSize": 0,
-          "textForegroundColor": 0,
-          "textStrokeColor": 0,
-          "textStrokeWidth": 0,
-          "zPosition": 0
-        },
-        {
-          "center": {
-            "x": 70081,
-            "y": 64918
-          },
-          "content": {
-            "CLASSNAME": "Image",
-            "INSTANCE": {
-              "imageDisplayPath": "/storage/emulated/0/Download/1175603978f1a46b93l.jpg",
-              "isPlaceHolder": false
-            }
-          },
-          "contentOffset": {
-            "x": 0,
-            "y": 0
-          },
-          "contentRotation": 0,
-          "contentSize": {
-            "height": 36885,
-            "width": 36885
-          },
-          "contentType": 0,
-          "frameColor": 0,
-          "frameId": 0,
-          "frameWidthOrScale": 0,
-          "id": 22064,
-          "layoutId": 0,
-          "rotation": 0,
-          "size": {
-            "height": 36885,
-            "width": 36885
-          },
-          "textAlignment": 0,
-          "textBackgroundColor": 0,
-          "textFontSize": 0,
-          "textForegroundColor": 0,
-          "textStrokeColor": 0,
-          "textStrokeWidth": 0,
-          "zPosition": 0
-        },
-        {
-          "center": {
-            "x": 109918,
-            "y": 64918
-          },
-          "content": {
-            "CLASSNAME": "Image",
-            "INSTANCE": {
-              "imageDisplayPath": "/storage/emulated/0/Download/1175603960eee597c0l.jpg",
-              "isPlaceHolder": false
-            }
-          },
-          "contentOffset": {
-            "x": 0,
-            "y": 0
-          },
-          "contentRotation": 0,
-          "contentSize": {
-            "height": 36885,
-            "width": 36885
-          },
-          "contentType": 0,
-          "frameColor": 0,
-          "frameId": 0,
-          "frameWidthOrScale": 0,
-          "id": 22065,
-          "layoutId": 0,
-          "rotation": 0,
-          "size": {
-            "height": 36885,
-            "width": 36885
-          },
-          "textAlignment": 0,
-          "textBackgroundColor": 0,
-          "textFontSize": 0,
-          "textForegroundColor": 0,
-          "textStrokeColor": 0,
-          "textStrokeWidth": 0,
-          "zPosition": 0
-        }
-      ],
-      "stdRatioType": 4,
-      "themeId": 200,
-      "thumbPath": "Tapsbook/Layouts/12x12/layout_3013.png",
-      "type": "NORMAL"
-    },
-    {
-      "backgroundId": 0,
-      "id": 3025,
-      "index": 0,
-      "isFirstPage": false,
-      "isFrontPageLayout": false,
-      "isSpread": true,
-      "printInfoId": 0,
-      "size": {
-        "height": 90000,
-        "width": 180000
-      },
-      "slots": [
-        {
-          "center": {
-            "x": 65655,
-            "y": 45000
-          },
-          "content": {
-            "CLASSNAME": "Image",
-            "INSTANCE": {
-              "imageDisplayPath": "/storage/emulated/0/Download/1175603959bc27993al.jpg",
-              "isPlaceHolder": false
-            }
-          },
-          "contentOffset": {
-            "x": 0,
-            "y": 0
-          },
-          "contentRotation": 0,
-          "contentSize": {
-            "height": 91500,
-            "width": 131311
-          },
-          "contentType": 0,
-          "frameColor": 0,
-          "frameId": 0,
-          "frameWidthOrScale": 0,
-          "id": 22108,
-          "layoutId": 0,
-          "rotation": 0,
-          "size": {
-            "height": 91500,
-            "width": 131311
-          },
-          "textAlignment": 0,
-          "textBackgroundColor": 0,
-          "textFontSize": 0,
-          "textForegroundColor": 0,
-          "textStrokeColor": 0,
-          "textStrokeWidth": 0,
-          "zPosition": 0
-        },
-        {
-          "center": {
-            "x": 156393,
-            "y": 45000
-          },
-          "content": {
-            "CLASSNAME": "Image",
-            "INSTANCE": {
-              "imageDisplayPath": "/storage/emulated/0/Download/1175770027c487b51bl.jpg",
-              "isPlaceHolder": false
-            }
-          },
-          "contentOffset": {
-            "x": 0,
-            "y": 0
-          },
-          "contentRotation": 0,
-          "contentSize": {
-            "height": 26557,
-            "width": 26557
-          },
-          "contentType": 0,
-          "frameColor": 0,
-          "frameId": 0,
-          "frameWidthOrScale": 0,
-          "id": 22109,
-          "layoutId": 0,
-          "rotation": 0,
-          "size": {
-            "height": 26557,
-            "width": 26557
-          },
-          "textAlignment": 0,
-          "textBackgroundColor": 0,
-          "textFontSize": 0,
-          "textForegroundColor": 0,
-          "textStrokeColor": 0,
-          "textStrokeWidth": 0,
-          "zPosition": 0
-        }
-      ],
-      "stdRatioType": 4,
-      "themeId": 200,
-      "thumbPath": "Tapsbook/Layouts/12x12/layout_3025.png",
-      "type": "NORMAL"
-    },
-    {
-      "backgroundId": 0,
-      "id": 3028,
-      "index": 0,
-      "isFirstPage": false,
-      "isFrontPageLayout": false,
-      "isSpread": true,
-      "printInfoId": 0,
-      "size": {
-        "height": 90000,
-        "width": 180000
-      },
-      "slots": [
-        {
-          "center": {
-            "x": 45000,
-            "y": 45000
-          },
-          "content": {
-            "CLASSNAME": "Image",
-            "INSTANCE": {
-              "imageDisplayPath": "/storage/emulated/0/Download/10045578023ecf4e62.jpg",
-              "isPlaceHolder": false
-            }
-          },
-          "contentOffset": {
-            "x": 0,
-            "y": 0
-          },
-          "contentRotation": 0,
-          "contentSize": {
-            "height": 91500,
-            "width": 90000
-          },
-          "contentType": 0,
-          "frameColor": 0,
-          "frameId": 0,
-          "frameWidthOrScale": 0,
-          "id": 22113,
-          "layoutId": 0,
-          "rotation": 0,
-          "size": {
-            "height": 91500,
-            "width": 90000
-          },
-          "textAlignment": 0,
-          "textBackgroundColor": 0,
-          "textFontSize": 0,
-          "textForegroundColor": 0,
-          "textStrokeColor": 0,
-          "textStrokeWidth": 0,
-          "zPosition": 0
-        },
-        {
-          "center": {
-            "x": 135000,
-            "y": 45000
-          },
-          "content": {
-            "CLASSNAME": "Image",
-            "INSTANCE": {
-              "imageDisplayPath": "/storage/emulated/0/Download/11318289606ecd84fbl.jpg",
-              "isPlaceHolder": false
-            }
-          },
-          "contentOffset": {
-            "x": 0,
-            "y": 0
-          },
-          "contentRotation": 0,
-          "contentSize": {
-            "height": 91500,
-            "width": 90000
-          },
-          "contentType": 0,
-          "frameColor": 0,
-          "frameId": 0,
-          "frameWidthOrScale": 0,
-          "id": 22114,
-          "layoutId": 0,
-          "rotation": 0,
-          "size": {
-            "height": 91500,
-            "width": 90000
-          },
-          "textAlignment": 0,
-          "textBackgroundColor": 0,
-          "textFontSize": 0,
-          "textForegroundColor": 0,
-          "textStrokeColor": 0,
-          "textStrokeWidth": 0,
-          "zPosition": 0
-        }
-      ],
-      "stdRatioType": 4,
-      "themeId": 200,
-      "thumbPath": "Tapsbook/Layouts/12x12/layout_3025.png",
-      "type": "NORMAL"
-    },
-    {
-      "backgroundId": 0,
-      "id": 3019,
-      "index": 0,
-      "isFirstPage": false,
-      "isFrontPageLayout": false,
-      "isSpread": true,
-      "printInfoId": 0,
-      "size": {
-        "height": 90000,
-        "width": 180000
-      },
-      "slots": [
-        {
-          "center": {
-            "x": 44631,
-            "y": 45000
-          },
-          "content": {
-            "CLASSNAME": "Image",
-            "INSTANCE": {
-              "imageDisplayPath": "/storage/emulated/0/Download/11458795009c5a22a9l.jpg",
-              "isPlaceHolder": false
-            }
-          },
-          "contentOffset": {
-            "x": 0,
-            "y": 0
-          },
-          "contentRotation": 0,
-          "contentSize": {
-            "height": 51639,
-            "width": 89262
-          },
-          "contentType": 0,
-          "frameColor": 0,
-          "frameId": 0,
-          "frameWidthOrScale": 0,
-          "id": 22098,
-          "layoutId": 0,
-          "rotation": 0,
-          "size": {
-            "height": 51639,
-            "width": 89262
-          },
-          "textAlignment": 0,
-          "textBackgroundColor": 0,
-          "textFontSize": 0,
-          "textForegroundColor": 0,
-          "textStrokeColor": 0,
-          "textStrokeWidth": 0,
-          "zPosition": 0
-        },
-        {
-          "center": {
-            "x": 135368,
-            "y": 45000
-          },
-          "content": {
-            "CLASSNAME": "Image",
-            "INSTANCE": {
-              "imageDisplayPath": "/storage/emulated/0/Download/11352364058d558448l.jpg",
-              "isPlaceHolder": false
-            }
-          },
-          "contentOffset": {
-            "x": 0,
-            "y": 0
-          },
-          "contentRotation": 0,
-          "contentSize": {
-            "height": 51639,
-            "width": 89262
-          },
-          "contentType": 0,
-          "frameColor": 0,
-          "frameId": 0,
-          "frameWidthOrScale": 0,
-          "id": 22099,
-          "layoutId": 0,
-          "rotation": 0,
-          "size": {
-            "height": 51639,
-            "width": 89262
-          },
-          "textAlignment": 0,
-          "textBackgroundColor": 0,
-          "textFontSize": 0,
-          "textForegroundColor": 0,
-          "textStrokeColor": 0,
-          "textStrokeWidth": 0,
-          "zPosition": 0
-        }
-      ],
-      "stdRatioType": 4,
-      "themeId": 200,
-      "thumbPath": "Tapsbook/Layouts/12x12/layout_3019.png",
-      "type": "NORMAL"
-    },
-    {
-      "backgroundId": 0,
-      "id": 3019,
-      "index": 0,
-      "isFirstPage": false,
-      "isFrontPageLayout": false,
-      "isSpread": true,
-      "printInfoId": 0,
-      "size": {
-        "height": 90000,
-        "width": 180000
-      },
-      "slots": [
-        {
-          "center": {
-            "x": 44631,
-            "y": 45000
-          },
-          "content": {
-            "CLASSNAME": "Image",
-            "INSTANCE": {
-              "imageDisplayPath": "/storage/emulated/0/Download/11325613211c2b22a3l.jpg",
-              "isPlaceHolder": false
-            }
-          },
-          "contentOffset": {
-            "x": 0,
-            "y": 0
-          },
-          "contentRotation": 0,
-          "contentSize": {
-            "height": 51639,
-            "width": 89262
-          },
-          "contentType": 0,
-          "frameColor": 0,
-          "frameId": 0,
-          "frameWidthOrScale": 0,
-          "id": 22098,
-          "layoutId": 0,
-          "rotation": 0,
-          "size": {
-            "height": 51639,
-            "width": 89262
-          },
-          "textAlignment": 0,
-          "textBackgroundColor": 0,
-          "textFontSize": 0,
-          "textForegroundColor": 0,
-          "textStrokeColor": 0,
-          "textStrokeWidth": 0,
-          "zPosition": 0
-        },
-        {
-          "center": {
-            "x": 135368,
-            "y": 45000
-          },
-          "content": {
-            "CLASSNAME": "Image",
-            "INSTANCE": {
-              "imageDisplayPath": "/storage/emulated/0/Download/11482029469b200be9l.jpg",
-              "isPlaceHolder": false
-            }
-          },
-          "contentOffset": {
-            "x": 0,
-            "y": 0
-          },
-          "contentRotation": 0,
-          "contentSize": {
-            "height": 51639,
-            "width": 89262
-          },
-          "contentType": 0,
-          "frameColor": 0,
-          "frameId": 0,
-          "frameWidthOrScale": 0,
-          "id": 22099,
-          "layoutId": 0,
-          "rotation": 0,
-          "size": {
-            "height": 51639,
-            "width": 89262
-          },
-          "textAlignment": 0,
-          "textBackgroundColor": 0,
-          "textFontSize": 0,
-          "textForegroundColor": 0,
-          "textStrokeColor": 0,
-          "textStrokeWidth": 0,
-          "zPosition": 0
-        }
-      ],
-      "stdRatioType": 4,
-      "themeId": 200,
-      "thumbPath": "Tapsbook/Layouts/12x12/layout_3019.png",
-      "type": "NORMAL"
-    },
-    {
-      "backgroundId": 0,
-      "id": 3026,
-      "index": 0,
-      "isFirstPage": false,
-      "isFrontPageLayout": false,
-      "isSpread": true,
-      "printInfoId": 0,
-      "size": {
-        "height": 90000,
-        "width": 180000
-      },
-      "slots": [
-        {
-          "center": {
-            "x": 58800,
-            "y": 45000
-          },
-          "content": {
-            "CLASSNAME": "Image",
-            "INSTANCE": {
-              "imageDisplayPath": "/storage/emulated/0/Download/117560395681ef434al.jpg",
-              "isPlaceHolder": false
-            }
-          },
-          "contentOffset": {
-            "x": 0,
-            "y": 0
-          },
-          "contentRotation": 0,
-          "contentSize": {
-            "height": 91500,
-            "width": 117600
-          },
-          "contentType": 0,
-          "frameColor": 0,
-          "frameId": 0,
-          "frameWidthOrScale": 0,
-          "id": 22110,
-          "layoutId": 0,
-          "rotation": 0,
-          "size": {
-            "height": 91500,
-            "width": 117600
-          },
-          "textAlignment": 0,
-          "textBackgroundColor": 0,
-          "textFontSize": 0,
-          "textForegroundColor": 0,
-          "textStrokeColor": 0,
-          "textStrokeWidth": 0,
-          "zPosition": 0
-        },
-        {
-          "center": {
-            "x": 150000,
-            "y": 45000
-          },
-          "content": {
-            "CLASSNAME": "Image",
-            "INSTANCE": {
-              "imageDisplayPath": "/storage/emulated/0/Download/11492473309b39a0c2l.jpg",
-              "isPlaceHolder": false
-            }
-          },
-          "contentOffset": {
-            "x": 0,
-            "y": 0
-          },
-          "contentRotation": 0,
-          "contentSize": {
-            "height": 91500,
-            "width": 60000
-          },
-          "contentType": 0,
-          "frameColor": 0,
-          "frameId": 0,
-          "frameWidthOrScale": 0,
-          "id": 22111,
-          "layoutId": 0,
-          "rotation": 0,
-          "size": {
-            "height": 91500,
-            "width": 60000
-          },
-          "textAlignment": 0,
-          "textBackgroundColor": 0,
-          "textFontSize": 0,
-          "textForegroundColor": 0,
-          "textStrokeColor": 0,
-          "textStrokeWidth": 0,
-          "zPosition": 0
-        }
-      ],
-      "stdRatioType": 4,
-      "themeId": 200,
-      "thumbPath": "Tapsbook/Layouts/12x12/layout_3025.png",
-      "type": "NORMAL"
-    },
-    {
-      "backgroundId": 0,
-      "id": 3025,
-      "index": 0,
-      "isFirstPage": false,
-      "isFrontPageLayout": false,
-      "isSpread": true,
-      "printInfoId": 0,
-      "size": {
-        "height": 90000,
-        "width": 180000
-      },
-      "slots": [
-        {
-          "center": {
-            "x": 65655,
-            "y": 45000
-          },
-          "content": {
-            "CLASSNAME": "Image",
-            "INSTANCE": {
-              "imageDisplayPath": "/storage/emulated/0/Download/1005472405374c4121.jpg",
-              "isPlaceHolder": false
-            }
-          },
-          "contentOffset": {
-            "x": 0,
-            "y": 0
-          },
-          "contentRotation": 0,
-          "contentSize": {
-            "height": 91500,
-            "width": 131311
-          },
-          "contentType": 0,
-          "frameColor": 0,
-          "frameId": 0,
-          "frameWidthOrScale": 0,
-          "id": 22108,
-          "layoutId": 0,
-          "rotation": 0,
-          "size": {
-            "height": 91500,
-            "width": 131311
-          },
-          "textAlignment": 0,
-          "textBackgroundColor": 0,
-          "textFontSize": 0,
-          "textForegroundColor": 0,
-          "textStrokeColor": 0,
-          "textStrokeWidth": 0,
-          "zPosition": 0
-        },
-        {
-          "center": {
-            "x": 156393,
-            "y": 45000
-          },
-          "content": {
-            "CLASSNAME": "Image",
-            "INSTANCE": {
-              "imageDisplayPath": "/storage/emulated/0/Download/11581384030f1de058l.jpg",
-              "isPlaceHolder": false
-            }
-          },
-          "contentOffset": {
-            "x": 0,
-            "y": 0
-          },
-          "contentRotation": 0,
-          "contentSize": {
-            "height": 26557,
-            "width": 26557
-          },
-          "contentType": 0,
-          "frameColor": 0,
-          "frameId": 0,
-          "frameWidthOrScale": 0,
-          "id": 22109,
-          "layoutId": 0,
-          "rotation": 0,
-          "size": {
-            "height": 26557,
-            "width": 26557
-          },
-          "textAlignment": 0,
-          "textBackgroundColor": 0,
-          "textFontSize": 0,
-          "textForegroundColor": 0,
-          "textStrokeColor": 0,
-          "textStrokeWidth": 0,
-          "zPosition": 0
-        }
-      ],
-      "stdRatioType": 4,
-      "themeId": 200,
-      "thumbPath": "Tapsbook/Layouts/12x12/layout_3025.png",
-      "type": "NORMAL"
-    },
-    {
-      "backgroundId": 0,
-      "id": 3019,
-      "index": 0,
-      "isFirstPage": false,
-      "isFrontPageLayout": false,
-      "isSpread": true,
-      "printInfoId": 0,
-      "size": {
-        "height": 90000,
-        "width": 180000
-      },
-      "slots": [
-        {
-          "center": {
-            "x": 44631,
-            "y": 45000
-          },
-          "content": {
-            "CLASSNAME": "Image",
-            "INSTANCE": {
-              "imageDisplayPath": "/storage/emulated/0/Download/1131828958429b2a8cl.jpg",
-              "isPlaceHolder": false
-            }
-          },
-          "contentOffset": {
-            "x": 0,
-            "y": 0
-          },
-          "contentRotation": 0,
-          "contentSize": {
-            "height": 51639,
-            "width": 89262
-          },
-          "contentType": 0,
-          "frameColor": 0,
-          "frameId": 0,
-          "frameWidthOrScale": 0,
-          "id": 22098,
-          "layoutId": 0,
-          "rotation": 0,
-          "size": {
-            "height": 51639,
-            "width": 89262
-          },
-          "textAlignment": 0,
-          "textBackgroundColor": 0,
-          "textFontSize": 0,
-          "textForegroundColor": 0,
-          "textStrokeColor": 0,
-          "textStrokeWidth": 0,
-          "zPosition": 0
-        },
-        {
-          "center": {
-            "x": 135368,
-            "y": 45000
-          },
-          "content": {
-            "CLASSNAME": "Image",
-            "INSTANCE": {
-              "imageDisplayPath": "/storage/emulated/0/Download/1136459168378a0b84l.jpg",
-              "isPlaceHolder": false
-            }
-          },
-          "contentOffset": {
-            "x": 0,
-            "y": 0
-          },
-          "contentRotation": 0,
-          "contentSize": {
-            "height": 51639,
-            "width": 89262
-          },
-          "contentType": 0,
-          "frameColor": 0,
-          "frameId": 0,
-          "frameWidthOrScale": 0,
-          "id": 22099,
-          "layoutId": 0,
-          "rotation": 0,
-          "size": {
-            "height": 51639,
-            "width": 89262
-          },
-          "textAlignment": 0,
-          "textBackgroundColor": 0,
-          "textFontSize": 0,
-          "textForegroundColor": 0,
-          "textStrokeColor": 0,
-          "textStrokeWidth": 0,
-          "zPosition": 0
-        }
-      ],
-      "stdRatioType": 4,
-      "themeId": 200,
-      "thumbPath": "Tapsbook/Layouts/12x12/layout_3019.png",
-      "type": "NORMAL"
+      "type": "FRONT_COVER",
+      "uid": "ca49cabf-c8a4-4eb8-9d59-461328ba32ed_1473824177239"
     },
     {
       "backgroundId": 0,
@@ -1205,6 +312,7 @@
       "isFirstPage": false,
       "isFrontPageLayout": false,
       "isSpread": true,
+      "pageUrl": "",
       "printInfoId": 0,
       "size": {
         "height": 90000,
@@ -1219,7 +327,9 @@
           "content": {
             "CLASSNAME": "Image",
             "INSTANCE": {
-              "imageDisplayPath": "/storage/emulated/0/Download/11492472860765e43al.jpg",
+              "identifier": "1473824176502",
+              "imageDisplayPath": "/storage/emulated/0/Download/12891293309162.jpg",
+              "imageUrlPath": "Http://testImage.1473824176502.jpg",
               "isPlaceHolder": false
             }
           },
@@ -1238,6 +348,7 @@
           "frameWidthOrScale": 0,
           "id": 22104,
           "layoutId": 0,
+          "rotateDegrees": 0,
           "rotation": 0,
           "size": {
             "height": 39836,
@@ -1259,7 +370,9 @@
           "content": {
             "CLASSNAME": "Image",
             "INSTANCE": {
-              "imageDisplayPath": "/storage/emulated/0/Download/12606311428909.jpg",
+              "identifier": "1473824176502",
+              "imageDisplayPath": "/storage/emulated/0/Download/1120418073ce8ae1f8o.jpg",
+              "imageUrlPath": "Http://testImage.1473824176502.jpg",
               "isPlaceHolder": false
             }
           },
@@ -1278,6 +391,7 @@
           "frameWidthOrScale": 0,
           "id": 22105,
           "layoutId": 0,
+          "rotateDegrees": 0,
           "rotation": 0,
           "size": {
             "height": 59016,
@@ -1295,30 +409,34 @@
       "stdRatioType": 4,
       "themeId": 200,
       "thumbPath": "Tapsbook/Layouts/12x12/layout_3023.png",
-      "type": "NORMAL"
+      "type": "NORMAL",
+      "uid": "4f2d7c01-d362-4e29-ad32-c14439f3de78_1473824177232"
     },
     {
       "backgroundId": 0,
-      "id": 2012,
+      "id": 3025,
       "index": 0,
       "isFirstPage": false,
       "isFrontPageLayout": false,
-      "isSpread": false,
+      "isSpread": true,
+      "pageUrl": "",
       "printInfoId": 0,
       "size": {
         "height": 90000,
-        "width": 90000
+        "width": 180000
       },
       "slots": [
         {
           "center": {
-            "x": 26999,
-            "y": 33000
+            "x": 65655,
+            "y": 45000
           },
           "content": {
             "CLASSNAME": "Image",
             "INSTANCE": {
-              "imageDisplayPath": "/storage/emulated/0/Download/12606311428909.jpg",
+              "identifier": "1473824176502",
+              "imageDisplayPath": "/storage/emulated/0/Download/1134635179f95c84dbo.jpg",
+              "imageUrlPath": "Http://testImage.1473824176502.jpg",
               "isPlaceHolder": false
             }
           },
@@ -1328,19 +446,63 @@
           },
           "contentRotation": 0,
           "contentSize": {
-            "height": 48000,
-            "width": 36000
+            "height": 91500,
+            "width": 131311
           },
           "contentType": 0,
           "frameColor": 0,
           "frameId": 0,
           "frameWidthOrScale": 0,
-          "id": 20012,
+          "id": 22108,
           "layoutId": 0,
+          "rotateDegrees": 0,
           "rotation": 0,
           "size": {
-            "height": 48000,
-            "width": 36000
+            "height": 91500,
+            "width": 131311
+          },
+          "textAlignment": 0,
+          "textBackgroundColor": 0,
+          "textFontSize": 0,
+          "textForegroundColor": 0,
+          "textStrokeColor": 0,
+          "textStrokeWidth": 0,
+          "zPosition": 0
+        },
+        {
+          "center": {
+            "x": 156393,
+            "y": 45000
+          },
+          "content": {
+            "CLASSNAME": "Image",
+            "INSTANCE": {
+              "identifier": "1473824176502",
+              "imageDisplayPath": "/storage/emulated/0/Download/12976312754550.jpg",
+              "imageUrlPath": "Http://testImage.1473824176502.jpg",
+              "isPlaceHolder": false
+            }
+          },
+          "contentOffset": {
+            "x": 0,
+            "y": 0
+          },
+          "contentRotation": 0,
+          "contentSize": {
+            "height": 26557,
+            "width": 26557
+          },
+          "contentType": 0,
+          "frameColor": 0,
+          "frameId": 0,
+          "frameWidthOrScale": 0,
+          "id": 22109,
+          "layoutId": 0,
+          "rotateDegrees": 0,
+          "rotation": 0,
+          "size": {
+            "height": 26557,
+            "width": 26557
           },
           "textAlignment": 0,
           "textBackgroundColor": 0,
@@ -1353,8 +515,437 @@
       ],
       "stdRatioType": 4,
       "themeId": 200,
-      "thumbPath": "Tapsbook/Layouts/12x12/layout_2012.png",
-      "type": "NORMAL"
+      "thumbPath": "Tapsbook/Layouts/12x12/layout_3025.png",
+      "type": "NORMAL",
+      "uid": "d1bdebc3-e063-4993-937e-f69a9f24d25a_1473824177233"
+    },
+    {
+      "backgroundId": 0,
+      "id": 2108,
+      "index": 0,
+      "isFirstPage": false,
+      "isFrontPageLayout": false,
+      "isSpread": true,
+      "pageUrl": "",
+      "printInfoId": 0,
+      "size": {
+        "height": 90000,
+        "width": 180000
+      },
+      "slots": [
+        {
+          "center": {
+            "x": 120000,
+            "y": 45000
+          },
+          "content": {
+            "CLASSNAME": "Image",
+            "INSTANCE": {
+              "identifier": "1473824176502",
+              "imageDisplayPath": "/storage/emulated/0/Download/test22.png",
+              "imageUrlPath": "Http://testImage.1473824176502.jpg",
+              "isPlaceHolder": false
+            }
+          },
+          "contentOffset": {
+            "x": 0,
+            "y": 0
+          },
+          "contentRotation": 0,
+          "contentSize": {
+            "height": 66000,
+            "width": 120000
+          },
+          "contentType": 0,
+          "frameColor": 0,
+          "frameId": 0,
+          "frameWidthOrScale": 0,
+          "id": 20353,
+          "layoutId": 0,
+          "rotateDegrees": 0,
+          "rotation": 0,
+          "size": {
+            "height": 66000,
+            "width": 120000
+          },
+          "textAlignment": 0,
+          "textBackgroundColor": 0,
+          "textFontSize": 0,
+          "textForegroundColor": 0,
+          "textStrokeColor": 0,
+          "textStrokeWidth": 0,
+          "zPosition": 0
+        },
+        {
+          "center": {
+            "x": 30000,
+            "y": 45000
+          },
+          "content": {
+            "CLASSNAME": "Image",
+            "INSTANCE": {
+              "identifier": "1473824176502",
+              "imageDisplayPath": "/storage/emulated/0/Download/1178008896a777569eo.jpg",
+              "imageUrlPath": "Http://testImage.1473824176503.jpg",
+              "isPlaceHolder": false
+            }
+          },
+          "contentOffset": {
+            "x": 0,
+            "y": 0
+          },
+          "contentRotation": 0,
+          "contentSize": {
+            "height": 66000,
+            "width": 60000
+          },
+          "contentType": 0,
+          "frameColor": 0,
+          "frameId": 0,
+          "frameWidthOrScale": 0,
+          "id": 20354,
+          "layoutId": 0,
+          "rotateDegrees": 0,
+          "rotation": 0,
+          "size": {
+            "height": 66000,
+            "width": 60000
+          },
+          "textAlignment": 0,
+          "textBackgroundColor": 0,
+          "textFontSize": 0,
+          "textForegroundColor": 0,
+          "textStrokeColor": 0,
+          "textStrokeWidth": 0,
+          "zPosition": 1
+        }
+      ],
+      "stdRatioType": 4,
+      "themeId": 200,
+      "thumbPath": "Tapsbook/Layouts/12x12/layout_2108.png",
+      "type": "NORMAL",
+      "uid": "397aa854-f34f-444a-b8db-022ec7a01eaf_1473824177234"
+    },
+    {
+      "backgroundId": 0,
+      "id": 3023,
+      "index": 0,
+      "isFirstPage": false,
+      "isFrontPageLayout": false,
+      "isSpread": true,
+      "pageUrl": "",
+      "printInfoId": 0,
+      "size": {
+        "height": 90000,
+        "width": 180000
+      },
+      "slots": [
+        {
+          "center": {
+            "x": 45737,
+            "y": 45000
+          },
+          "content": {
+            "CLASSNAME": "Image",
+            "INSTANCE": {
+              "identifier": "1473824176503",
+              "imageDisplayPath": "/storage/emulated/0/Download/10014890582b3f2ddc.jpg",
+              "imageUrlPath": "Http://testImage.1473824176503.jpg",
+              "isPlaceHolder": false
+            }
+          },
+          "contentOffset": {
+            "x": 0,
+            "y": 0
+          },
+          "contentRotation": 0,
+          "contentSize": {
+            "height": 39836,
+            "width": 51639
+          },
+          "contentType": 0,
+          "frameColor": 0,
+          "frameId": 0,
+          "frameWidthOrScale": 0,
+          "id": 22104,
+          "layoutId": 0,
+          "rotateDegrees": 0,
+          "rotation": 0,
+          "size": {
+            "height": 39836,
+            "width": 51639
+          },
+          "textAlignment": 0,
+          "textBackgroundColor": 0,
+          "textFontSize": 0,
+          "textForegroundColor": 0,
+          "textStrokeColor": 0,
+          "textStrokeWidth": 0,
+          "zPosition": 0
+        },
+        {
+          "center": {
+            "x": 135000,
+            "y": 45000
+          },
+          "content": {
+            "CLASSNAME": "Image",
+            "INSTANCE": {
+              "identifier": "1473824176503",
+              "imageDisplayPath": "/storage/emulated/0/Download/10062279486ee6b3bd.jpg",
+              "imageUrlPath": "Http://testImage.1473824176503.jpg",
+              "isPlaceHolder": false
+            }
+          },
+          "contentOffset": {
+            "x": 0,
+            "y": 0
+          },
+          "contentRotation": 0,
+          "contentSize": {
+            "height": 59016,
+            "width": 73770
+          },
+          "contentType": 0,
+          "frameColor": 0,
+          "frameId": 0,
+          "frameWidthOrScale": 0,
+          "id": 22105,
+          "layoutId": 0,
+          "rotateDegrees": 0,
+          "rotation": 0,
+          "size": {
+            "height": 59016,
+            "width": 73770
+          },
+          "textAlignment": 0,
+          "textBackgroundColor": 0,
+          "textFontSize": 0,
+          "textForegroundColor": 0,
+          "textStrokeColor": 0,
+          "textStrokeWidth": 0,
+          "zPosition": 0
+        }
+      ],
+      "stdRatioType": 4,
+      "themeId": 200,
+      "thumbPath": "Tapsbook/Layouts/12x12/layout_3023.png",
+      "type": "NORMAL",
+      "uid": "0f7fe227-3eea-445e-8860-ca5ae8510323_1473824177235"
+    },
+    {
+      "backgroundId": 0,
+      "id": 2185,
+      "index": 0,
+      "isFirstPage": false,
+      "isFrontPageLayout": false,
+      "isSpread": true,
+      "pageUrl": "",
+      "printInfoId": 0,
+      "size": {
+        "height": 90000,
+        "width": 180000
+      },
+      "slots": [
+        {
+          "center": {
+            "x": 78000,
+            "y": 45000
+          },
+          "content": {
+            "CLASSNAME": "Image",
+            "INSTANCE": {
+              "identifier": "1473824176503",
+              "imageDisplayPath": "/storage/emulated/0/Download/11008363430f529685o.jpg",
+              "imageUrlPath": "Http://testImage.1473824176503.jpg",
+              "isPlaceHolder": false
+            }
+          },
+          "contentOffset": {
+            "x": 0,
+            "y": 0
+          },
+          "contentRotation": 0,
+          "contentSize": {
+            "height": 66000,
+            "width": 144000
+          },
+          "contentType": 0,
+          "frameColor": 0,
+          "frameId": 0,
+          "frameWidthOrScale": 0,
+          "id": 20933,
+          "layoutId": 0,
+          "rotateDegrees": 0,
+          "rotation": 0,
+          "size": {
+            "height": 66000,
+            "width": 144000
+          },
+          "textAlignment": 0,
+          "textBackgroundColor": 0,
+          "textFontSize": 0,
+          "textForegroundColor": 0,
+          "textStrokeColor": 0,
+          "textStrokeWidth": 0,
+          "zPosition": 0
+        },
+        {
+          "center": {
+            "x": 143399,
+            "y": 44400
+          },
+          "content": {
+            "CLASSNAME": "Image",
+            "INSTANCE": {
+              "identifier": "1473824176503",
+              "imageDisplayPath": "/storage/emulated/0/Download/11339568772ff0eed1o.jpg",
+              "imageUrlPath": "Http://testImage.1473824176503.jpg",
+              "isPlaceHolder": false
+            }
+          },
+          "contentOffset": {
+            "x": 0,
+            "y": 0
+          },
+          "contentRotation": 0,
+          "contentSize": {
+            "height": 38400,
+            "width": 58800
+          },
+          "contentType": 0,
+          "frameColor": 0,
+          "frameId": 0,
+          "frameWidthOrScale": 0,
+          "id": 20934,
+          "layoutId": 0,
+          "rotateDegrees": 0,
+          "rotation": 0,
+          "size": {
+            "height": 38400,
+            "width": 58800
+          },
+          "textAlignment": 0,
+          "textBackgroundColor": 0,
+          "textFontSize": 0,
+          "textForegroundColor": 0,
+          "textStrokeColor": 0,
+          "textStrokeWidth": 0,
+          "zPosition": 1
+        }
+      ],
+      "stdRatioType": 4,
+      "themeId": 200,
+      "thumbPath": "Tapsbook/Layouts/12x12/layout_2185.png",
+      "type": "NORMAL",
+      "uid": "6282c4d6-ce2b-4b50-8339-f583367c0b1e_1473824177236"
+    },
+    {
+      "backgroundId": 0,
+      "id": 3023,
+      "index": 0,
+      "isFirstPage": false,
+      "isFrontPageLayout": false,
+      "isSpread": true,
+      "pageUrl": "",
+      "printInfoId": 0,
+      "size": {
+        "height": 90000,
+        "width": 180000
+      },
+      "slots": [
+        {
+          "center": {
+            "x": 45737,
+            "y": 45000
+          },
+          "content": {
+            "CLASSNAME": "Image",
+            "INSTANCE": {
+              "identifier": "1473824176503",
+              "imageDisplayPath": "/storage/emulated/0/Download/11652415538e3d31d9o.jpg",
+              "imageUrlPath": "Http://testImage.1473824176503.jpg",
+              "isPlaceHolder": false
+            }
+          },
+          "contentOffset": {
+            "x": 0,
+            "y": 0
+          },
+          "contentRotation": 0,
+          "contentSize": {
+            "height": 39836,
+            "width": 51639
+          },
+          "contentType": 0,
+          "frameColor": 0,
+          "frameId": 0,
+          "frameWidthOrScale": 0,
+          "id": 22104,
+          "layoutId": 0,
+          "rotateDegrees": 0,
+          "rotation": 0,
+          "size": {
+            "height": 39836,
+            "width": 51639
+          },
+          "textAlignment": 0,
+          "textBackgroundColor": 0,
+          "textFontSize": 0,
+          "textForegroundColor": 0,
+          "textStrokeColor": 0,
+          "textStrokeWidth": 0,
+          "zPosition": 0
+        },
+        {
+          "center": {
+            "x": 135000,
+            "y": 45000
+          },
+          "content": {
+            "CLASSNAME": "Image",
+            "INSTANCE": {
+              "identifier": "1473824176503",
+              "imageDisplayPath": "/storage/emulated/0/Download/11997367382ead9baeo.jpg",
+              "imageUrlPath": "Http://testImage.1473824176503.jpg",
+              "isPlaceHolder": false
+            }
+          },
+          "contentOffset": {
+            "x": 0,
+            "y": 0
+          },
+          "contentRotation": 0,
+          "contentSize": {
+            "height": 59016,
+            "width": 73770
+          },
+          "contentType": 0,
+          "frameColor": 0,
+          "frameId": 0,
+          "frameWidthOrScale": 0,
+          "id": 22105,
+          "layoutId": 0,
+          "rotateDegrees": 0,
+          "rotation": 0,
+          "size": {
+            "height": 59016,
+            "width": 73770
+          },
+          "textAlignment": 0,
+          "textBackgroundColor": 0,
+          "textFontSize": 0,
+          "textForegroundColor": 0,
+          "textStrokeColor": 0,
+          "textStrokeWidth": 0,
+          "zPosition": 0
+        }
+      ],
+      "stdRatioType": 4,
+      "themeId": 200,
+      "thumbPath": "Tapsbook/Layouts/12x12/layout_3023.png",
+      "type": "NORMAL",
+      "uid": "fb7788cd-6b1c-47cc-a358-f63e57e7ec50_1473824177237"
     },
     {
       "backgroundId": 0,
@@ -1363,6 +954,7 @@
       "isFirstPage": false,
       "isFrontPageLayout": false,
       "isSpread": true,
+      "pageUrl": "",
       "printInfoId": 4,
       "size": {
         "height": 87500,
@@ -1378,7 +970,7 @@
             "CLASSNAME": "AppLogo",
             "INSTANCE": {
               "imageDisplayPath": "file:///android_asset/logo_display.png",
-              "imagePrintPath": "file:///android_asset/logo_print.png",
+              "imagePrintPath": "/data/user/0/com.tapsbook.app/default_covers/logo_print.jpg",
               "isPlaceHolder": false
             }
           },
@@ -1397,6 +989,7 @@
           "frameWidthOrScale": 0,
           "id": 10000014,
           "layoutId": 0,
+          "rotateDegrees": 0,
           "rotation": 0,
           "size": {
             "height": 8000,
@@ -1413,7 +1006,8 @@
       ],
       "stdRatioType": 0,
       "themeId": 0,
-      "type": "BACK_COVER"
+      "type": "BACK_COVER",
+      "uid": "ca49cabf-c8a4-4eb8-9d59-461328ba32ed_1473824177239"
     }
   ],
   "preferSpread": true,
@@ -1460,7 +1054,7 @@
     },
     "type": 101
   },
-  "sku": "1003",
+  "sku": "1004",
   "stdPageSize": {
     "height": 90000,
     "width": 90000
@@ -1468,6 +1062,6 @@
   "stdRatioType": 4,
   "themeId": 200,
   "unusedPageList": [],
-  "variant_id": "11"
+  "variant_id": "12"
 }
-````
+```

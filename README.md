@@ -49,6 +49,7 @@ dependencies {
 ### Integration
 
 Integrating TapsbookSDK to your android project is as simple as 1-2-3
+
 1. Feed the photos as Photo Asset to SDK
 2. Show the photo book editor in the SDK to let user create a photo book
 3. Take the SDK generated JSON page object or SDK generated page images for production.

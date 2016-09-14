@@ -6,13 +6,6 @@ The Tapsbook Android SDK allows you to easily integrate a native photo book crea
 2. Beautiful, fully customizable photo book page templates featuring your own branding/logo
 3. Full-featured, frictionless eCommerce checkout workflow for processing payments via various payment gateways (Stripe, Alipay or WeChat etc)
 
-The SDK is integrated with the backend system via REST API to manage the photo book printing workflow by working with our photo book print partners and shipping service providers to offer you a turnkey photo merchandising solution.
-
-To get started, you will need to:
-
-1. Sign up for a free tapsBook developer account: Go to http://search.tapsbook.com to sign up.
-2. Register your app and get an app key.
-
 ### Installation
 
 The best way to install Tapsbook SDK for Android is to use gradle and jcenter. First add jcenter to your list of Maven repositories, if needed.
@@ -103,8 +96,17 @@ The full JavaDoc of the TapsbookSDK android version can be found here: http://ta
 
 ### Backand and Fulfillment options
 
-TapsbookSDK has builts a world wide network of print partners serving AP, Europe and North America markets, and this will be your quickest option to get your customer created orders fulfilled. 
+TapsbookSDK has built its world wide network of print partners serving AP, Europe and North America markets, and this will be your quickest option to create a turnkey photo merchandising solution.. In the default mode, the SDK connects to the backend system via REST API to manage the product SKUs and photo book printing workflow by working with our photo book print partners and shipping service providers to offer you 
+
+To get started, you will need to:
+
+1. Sign up for a free tapsBook developer account: Go to http://dashboard.tapsbook.com to sign up.(invitation only, shoot us an email support@tapsbook.com)
+2. Register your app and get an app key.
 
 What if you have your own print workflow and print facility? No worries! The key design philosophy of TapsbookSDK is OPEN! TapsbookSDK can be easily integrated with exiting modern printing workflow quickly. TapsbookSDK allows many top print companies to create their own branded photo book mobile apps that connets to their own fulfillment capabilities. 
+
+### Contact us
+
+Our team is based in Raleigh, NC and office in Beijing and Xian in Chian. We love to hear from you, drop us an email support@tapsbook.com
 
 

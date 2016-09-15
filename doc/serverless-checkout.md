@@ -1,4 +1,4 @@
-# Private SDK Integration
+# SDK Integration with Private Backend
 
 For approved partners, Tapsbook SDK provides a private serverless deployment option that allows the developer to use its own private backend instead of the shared Tapsbook backend.
 

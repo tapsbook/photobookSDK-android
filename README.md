@@ -6,13 +6,6 @@ The Tapsbook Android SDK allows you to easily integrate a native photo book crea
 2. Beautiful, fully customizable photo book page templates featuring your own branding/logo
 3. Full-featured, frictionless eCommerce checkout workflow for processing payments via various payment gateways (Stripe, Alipay or WeChat etc)
 
-The SDK is integrated with the backend system via REST API to manage the photo book printing workflow by working with our photo book print partners and shipping service providers to offer you a turnkey photo merchandising solution.
-
-To get started, you will need to:
-
-1. Sign up for a free tapsBook developer account: Go to http://search.tapsbook.com to sign up.
-2. Register your app and get an app key.
-
 ### Installation
 
 The best way to install Tapsbook SDK for Android is to use gradle and jcenter. First add jcenter to your list of Maven repositories, if needed.
@@ -46,73 +39,48 @@ dependencies {
 }
 ```
 
-Add the following code to initialize the Tapsbook SDK.
+### Integration
 
-```
-import com.tapsbook.sdk.TapsbookSDK;
-import com.tapsbook.sdk.photos.Asset;
+Integrating TapsbookSDK to your android project is as simple as 1-2-3
 
-//Product configuration options
+1. Feed the photos as Photo Asset to SDK
+2. Show the photo book editor in the SDK to let user create a photo book
+3. Take the SDK generated JSON page object or SDK generated page images for production.
+
+The following code snippet shows how an Android app can add the photo book functions
+````
+ArrayList<Asset> assets = new ArrayList<>();
+for (String photoLocalPath: myPhotos) {
+    Asset photoAsset = new Asset();
+    photoAsset.originPath = photoLocalPath;
+    assets.add(photoAsset)
+}
+TapsbookSDK.launchTapsbook(currentActivity, assets);
+````
+
+### Configuration
+
+TapsbookSDK provides lots of config options so you can easily configure what kind of books you want your users to build by setting the following global variable
+
+````
 TapsbookSDK.config.generate.maxNumberOfPages = 40;//set max pages
 TapsbookSDK.config.generate.minNumberOfPages = 20;//set min pages
 TapsbookSDK.config.generate.generateGivenSizeImages = true;//set generate the 800x400 image
 TapsbookSDK.config.generate.isStartPageOnLeft = true; //set album start from left
 TapsbookSDK.config.generate.kTBProductPreferredTheme = 200; //set product theme
-...
-more options please read our doc
-```
+````
 
-Finally, invoke the Tapsbook SDK from your application using one of the following methods.
+### Customizing the look and feel
 
-```
-//initialize a set of photos to be included in the book.
-ArrayList<Asset> assets = new ArrayList<>();
-Asset asset = new Asset();
-asset.originPath = "your local jpg file path";
-if use online images,you should use like this:
-asset.urlPath = "your online jpg file path";
-assets.add(asset)
+Tapsbook uses its own theme rather than inheriting the theme of the hosting app, the built in default theme is a neutural color scheme so that it can blend into your app very easily. If you prefer to customize the SDK look and feel, we offer services to help you to do that.
 
-// Create book and Show the photobook UI
-TapsbookSDK.launchTapsbook(this, assets);
-TapsbookSDK.launchTapsbook(this, assets, new TapsbookSDKCallback() {
-    /**
-     *
-     * @param key the key
-     * @param item service needed content
-     * @param imagePaths generated images path list if set true
-     */
-    @Override
-    public void complete(String key, LineItem lineItem, List<String> imagePaths) {
-        //now the order is complete, launch own checkout activity
-        ....
-    }
-});
+### CRUD operations to the created books
 
-```
-
-### Other Config options
-
-Before calling `TapsbookSDK.launchTapsbook` you can further customize your configuration.
-These options allows you to personalize the app experience.
-
-* Photo count per page from Auto-generated book
-
-
-### Theming
-
-Tapsbook uses own theme rather than inheriting the theme of the hosting app.
-
-
-### Doc
-* To operate the album, please use `AlbumManager`,to call `AlbumManager.getInstance()`
+TapsbookSDK provides a singleton class `AlbumManager` let you easily implement Read, Update and Delete operation to existing books in your app. You can create a view that use the following methods to retrieve the list of all albums, then render them as a list view which showing the album covers (all these metadata are accessible through the Album object).
 
 ```
 //get saved album
 AlbumManager.getInstance().getSavedAlbums()
-
-//save currentAlbum
-AlbumManager.getInstance().saveCurrentAlbum()
 
 //delete currentAlbum,can delete by album id only
 AlbumManager.getInstance().deleteCurrentAlbum(String albumId)
@@ -122,35 +90,32 @@ AlbumManager.getInstance().getCurrentAlbum()
 
 ```
 
-* To launch SDK
+### Documentation
+The full JavaDoc of the TapsbookSDK android version can be found here: http://tapsbook.com/doc-android/index.html?com/tapsbook/sdk/TapsbookSDK.html
 
-```
-/**
- * Create a new album with photo specified as {@link Asset}
- *
- * @param context the Context used to launch activity
- * @param assets the array list of {@link Asset} to be used to pass the photo list path
- */
- public static void launchTapsbook(Context context, List<Asset> assets) {
-    
-/**
- * Open an existing album with a given albumID
- *
- * @param context the Context used to launch activity
- * @param albumId the album id of current album
- */
- public static void launchTapsbook(Context context, String albumId) {
 
-/**
- * Open an existing album with a given albumID and have access to the callback when user completed the editing.
- *
- * @param context the Context used to launch activity
- * @param callback the callback when upload images complete
- * @param albumId the album id of current album
- * @param sku the sku of current product
- */
-public static void launchTapsbook(@NotNull Context context,@NotNull TapsbookSDKCallback callback, @NotNull String albumId, @Nullable String sku) {
+### Backend and Fulfillment options
 
-```
+Two options:
+
+1. Use TapsbookSDK built in backend and integrated vendors
+2. Use your own print workflow
+
+TapsbookSDK has built its world wide network of print partners serving AP, Europe and North America markets, and this will be your quickest option to create a turnkey photo merchandising solution.. In the default mode, the SDK connects to the backend system via REST API to manage the product SKUs and photo book printing workflow by working with our photo book print partners and shipping service providers to offer you 
+
+To get started using the first option, you will need to:
+
+1. Sign up for a free tapsBook developer account: Go to http://dashboard.tapsbook.com to sign up.(invitation only, shoot us an email support@tapsbook.com)
+2. Register your app and get an app key.
+
+*What if you have your own print workflow and print facility?* No worries! The key design philosophy of TapsbookSDK is OPEN! TapsbookSDK can be easily integrated with exiting modern printing workflow quickly. TapsbookSDK allows many top print companies to create their own branded photo book mobile apps that connets to their own fulfillment capabilities. 
+
+### Other platforms
+
+TapsbookSDK also has its iOS sibling, [TapsbookSDK for iOS](https://github.com/tapsbook/photobookSDK-iOS), same cool stuff.
+
+### Contact us
+
+Our team is based in Raleigh, NC and office in Beijing and Xian in China. We love to hear from you, drop us an email support@tapsbook.com
 
 

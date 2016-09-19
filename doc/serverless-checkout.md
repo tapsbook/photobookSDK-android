@@ -24,11 +24,12 @@ TapsbookSDK.config.generate.generateGivenSizeImages = true;//set generate the 80
 
 During step 1, because your backend will manage the product SKU, your app should implement your product picker to let user pick a product (SKU) and this SKU needs also be provisioned in the TapsbookSDK's database through a customization step.  Finally you pass this SKU and other product custoimzation as an albumOption to SDK  
 ````
-//TODO: convert this to a new Hash and make it an option for the TapsbookSDK.launch method. this is currently set as a global config variable, 
-TapsbookSDK.config.generate.maxNumberOfPages = 40;//set max pages
-TapsbookSDK.config.generate.minNumberOfPages = 20;//set min pages
-TapsbookSDK.config.generate.isStartPageOnLeft = true; //set album start from left
-TapsbookSDK.config.generate.kTBProductPreferredTheme = 200; //set product theme
+TapsbookSDK.Option option = new TapsbookSDK.Option();
+option.setProductTheme(200);// set the given product theme id
+option.setProductSku("1300");// set the given product sku
+option.setProductMaxPageCount(30);// set max page count of this album
+option.setProductMinPageCount(20);// set min page count of this album
+option.setPreferredUiDirectionIsRTL(true);// set album start from right
 ````
 
 During step 3. You should process the launch method callback which include the page thumbnail file path

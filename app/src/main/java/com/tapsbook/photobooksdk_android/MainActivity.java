@@ -26,12 +26,6 @@ public class MainActivity extends Activity {
 
     public void openBook(View view) {
         ArrayList<Asset> assets = exportPhotos();
-        // set max page
-        TapsbookSDK.config.generate.maxNumberOfPages = 40;
-        // set min page
-        TapsbookSDK.config.generate.minImagesPerPage = 20;
-        // generate 800 * 400 image
-        TapsbookSDK.config.generate.generateGivenSizeImages = true;
         loadTapsbookSDK(assets);
     }
 
@@ -51,7 +45,13 @@ public class MainActivity extends Activity {
 
     private void loadTapsbookSDK(ArrayList<Asset> assets) {
         if (assets.size() > 0) {
-            TapsbookSDK.launchTapsbook(this, assets, App.getInstance(), null, null, null);
+            TapsbookSDK.Option option = new TapsbookSDK.Option();
+            //now you can set the option for each album
+            option.setProductTheme(200);// set the given product theme id
+            option.setProductSku("1200");// set the given product sku
+            option.setProductMaxPageCount(30);// set max page count of this album
+            option.setProductMinPageCount(20);// set min page count of this album
+            TapsbookSDK.launchTapsbook(this, assets, App.getInstance(), option);
         } else {
             Toast.makeText(this, "Please make sure you have some favorite photos ", Toast.LENGTH_SHORT).show();
         }

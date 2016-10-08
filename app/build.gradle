@@ -52,7 +52,7 @@ dependencies {
     compile 'com.raizlabs.android:DBFlow-Core:2.1.0'
     compile 'com.raizlabs.android:DBFlow:2.1.0'
     compile 'com.qiniu:qiniu-android-sdk:7.0.6'
-    compile 'com.edmodo:cropper:1.0.1'
+    compile 'com.theartofdev.edmodo:android-image-cropper:2.3.1'
     compile 'com.github.bumptech.glide:glide:3.6.1'
     compile 'com.google.code.gson:gson:2.3'
     compile 'com.booking:rtlviewpager:1.0.0@aar'

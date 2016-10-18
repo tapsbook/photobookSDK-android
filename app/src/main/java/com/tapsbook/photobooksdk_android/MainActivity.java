@@ -1,6 +1,7 @@
 package com.tapsbook.photobooksdk_android;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.view.View;
@@ -70,6 +71,10 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
                 isRTL = isChecked;
                 break;
         }
+    }
+
+    public void showAllAlbum(View view) {
+        startActivity(new Intent(this, AlbumListActivity.class));
     }
 
     public void openBook(View view) {

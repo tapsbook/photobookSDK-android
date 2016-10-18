@@ -75,13 +75,28 @@
             android:text="themeId = 202, sku = 999" />
     </RadioGroup>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <LinearLayout
         android:layout_gravity="center_horizontal"
-        android:width="120dp"
-        android:background="#ffffdf22"
-        android:onClick="openBook"
-        android:text="Test Drive" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:width="120dp"
+            android:background="#ffffdf22"
+            android:onClick="openBook"
+            android:text="Test Drive" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:width="120dp"
+            android:layout_marginLeft="50dp"
+            android:background="#ffffdf22"
+            android:onClick="showAllAlbum"
+            android:text="Show All Album" />
+    </LinearLayout>
 
 </LinearLayout>

@@ -29,17 +29,25 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Set option to your album"
-        android:textSize="20sp"
         android:layout_marginBottom="10dp"
-        android:textColor="#000" />
+        android:text="Set option of your album"
+        android:textColor="#000"
+        android:textSize="20sp" />
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/sw_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:padding="10dp"
+        android:text="Is start page from left?" />
+
+    <Switch
+        android:id="@+id/sw_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:text="start from left?" />
+        android:text="Is UI direction RTL?" />
 
     <RadioGroup
         android:id="@+id/radio_group"
@@ -76,9 +84,4 @@
         android:onClick="openBook"
         android:text="Test Drive" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal" />
 </LinearLayout>

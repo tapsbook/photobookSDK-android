@@ -9,9 +9,7 @@ import android.widget.RadioGroup;
 import android.widget.Switch;
 import android.widget.Toast;
 
-import com.tapsbook.sdk.AlbumManager;
 import com.tapsbook.sdk.TapsbookSDK;
-import com.tapsbook.sdk.model.AlbumInfo;
 import com.tapsbook.sdk.photos.Asset;
 
 import java.io.File;
@@ -19,7 +17,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.List;
 
 
 public class MainActivity extends Activity implements RadioGroup.OnCheckedChangeListener, CompoundButton.OnCheckedChangeListener {
@@ -27,15 +24,22 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
     private long themeId = 200;
     private String sku = "1004";
     private boolean isStartFromLeft = false;
+    private boolean isRTL = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        initView();
+    }
+
+    private void initView() {
         RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radio_group);
         radioGroup.setOnCheckedChangeListener(this);
-        Switch sw = (Switch) findViewById(R.id.switch1);
+        Switch sw = (Switch) findViewById(R.id.sw_1);
+        Switch swRTL = (Switch) findViewById(R.id.sw_2);
         sw.setOnCheckedChangeListener(this);
+        swRTL.setOnCheckedChangeListener(this);
     }
 
     @Override
@@ -58,24 +62,19 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
 
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-        isStartFromLeft = isChecked;
+        switch (buttonView.getId()) {
+            case R.id.sw_1:
+                isStartFromLeft = isChecked;
+                break;
+            case R.id.sw_2:
+                isRTL = isChecked;
+                break;
+        }
     }
 
     public void openBook(View view) {
         ArrayList<Asset> assets = exportPhotos();
         loadTapsbookSDK(assets);
-
-        /*
-        //you can load album by album id, the id only can get from the database
-        //1. get saved album from database
-        List<AlbumInfo> savedAlbums = AlbumManager.getInstance().getSavedAlbums();
-        //2. get album id, you can change the position by yourself,but can not more than albums count
-        int position = 0;
-        String albumId = savedAlbums.get(position).getId();
-        //3.load by id
-        TapsbookSDK.launchTapsbook(this, albumId);
-        */
-
     }
 
     private ArrayList<Asset> exportPhotos() {
@@ -99,6 +98,7 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
             option.setProductTheme(themeId);// set the given product theme id
             option.setProductSku(sku);// set the given product sku
             option.setStartPageFromLeft(isStartFromLeft);// set album start direction
+            option.setPreferredUiDirectionIsRTL(isRTL);// set ui direction
             option.setProductMaxPageCount(30);// set max page count of this album
             option.setProductMinPageCount(20);// set min page count of this album
             TapsbookSDK.launchTapsbook(this, assets, App.getInstance(), option);

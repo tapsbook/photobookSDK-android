@@ -1,45 +1,102 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:gravity="center"
-android:orientation="vertical"
-    android:background="#fffdffca">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffdffca"
+    android:gravity="center"
+    android:orientation="vertical">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Tapsbook SDK"
         android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:textSize="40dp"
-        android:fontFamily="sans-serif-light" />
+        android:fontFamily="sans-serif-light"
+        android:text="Tapsbook SDK"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40dp" />
 
     <TextView
-    android:layout_width="324dp"
-    android:layout_height="wrap_content"
-    android:padding="24dp"
-    android:text="@string/sdk_welcome"
-    android:textAlignment="center"
-    android:textSize="20dp"
-    android:textStyle="bold|normal"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
         android:fontFamily="sans-serif-thin"
-        android:layout_marginBottom="100dp" />
+        android:padding="24dp"
+        android:text="@string/sdk_welcome"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold|normal" />
 
-
-
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Test Drive"
-        android:onClick="openBook"
+        android:layout_marginBottom="10dp"
+        android:text="Set option of your album"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <Switch
+        android:id="@+id/sw_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:padding="10dp"
+        android:text="Is start page from left?" />
+
+    <Switch
+        android:id="@+id/sw_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Is UI direction RTL?" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp">
+
+        <RadioButton
+            android:id="@+id/rb_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="themeId = 200, sku = 1004" />
+
+        <RadioButton
+            android:id="@+id/rb_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="themeId = 201, sku = 998" />
+
+        <RadioButton
+            android:id="@+id/rb_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="themeId = 202, sku = 999" />
+    </RadioGroup>
+
+    <LinearLayout
         android:layout_gravity="center_horizontal"
-        android:background="#ffffdf22"
-        android:width="120dp" />
-
-    <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:layout_gravity="center_horizontal" />
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:width="120dp"
+            android:background="#ffffdf22"
+            android:onClick="openBook"
+            android:text="Test Drive" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:width="120dp"
+            android:layout_marginLeft="50dp"
+            android:background="#ffffdf22"
+            android:onClick="showAllAlbum"
+            android:text="Show All Album" />
+    </LinearLayout>
+
 </LinearLayout>

@@ -1,9 +1,13 @@
 package com.tapsbook.photobooksdk_android;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CompoundButton;
+import android.widget.RadioGroup;
+import android.widget.Switch;
 import android.widget.Toast;
 
 import com.tapsbook.sdk.TapsbookSDK;
@@ -16,12 +20,61 @@ import java.io.InputStream;
 import java.util.ArrayList;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements RadioGroup.OnCheckedChangeListener, CompoundButton.OnCheckedChangeListener {
+
+    private long themeId = 200;
+    private String sku = "1004";
+    private boolean isStartFromLeft = false;
+    private boolean isRTL = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        initView();
+    }
+
+    private void initView() {
+        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radio_group);
+        radioGroup.setOnCheckedChangeListener(this);
+        Switch sw = (Switch) findViewById(R.id.sw_1);
+        Switch swRTL = (Switch) findViewById(R.id.sw_2);
+        sw.setOnCheckedChangeListener(this);
+        swRTL.setOnCheckedChangeListener(this);
+    }
+
+    @Override
+    public void onCheckedChanged(RadioGroup group, int checkedId) {
+        switch (checkedId) {
+            case R.id.rb_1:
+                themeId = 200;
+                sku = "1004";
+                break;
+            case R.id.rb_2:
+                themeId = 201;
+                sku = "998";
+                break;
+            case R.id.rb_3:
+                themeId = 202;
+                sku = "999";
+                break;
+        }
+    }
+
+    @Override
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+        switch (buttonView.getId()) {
+            case R.id.sw_1:
+                isStartFromLeft = isChecked;
+                break;
+            case R.id.sw_2:
+                isRTL = isChecked;
+                break;
+        }
+    }
+
+    public void showAllAlbum(View view) {
+        startActivity(new Intent(this, AlbumListActivity.class));
     }
 
     public void openBook(View view) {
@@ -47,8 +100,10 @@ public class MainActivity extends Activity {
         if (assets.size() > 0) {
             TapsbookSDK.Option option = new TapsbookSDK.Option();
             //now you can set the option for each album
-            option.setProductTheme(200);// set the given product theme id
-            option.setProductSku("1200");// set the given product sku
+            option.setProductTheme(themeId);// set the given product theme id
+            option.setProductSku(sku);// set the given product sku
+            option.setStartPageFromLeft(isStartFromLeft);// set album start direction
+            option.setPreferredUiDirectionIsRTL(isRTL);// set ui direction
             option.setProductMaxPageCount(30);// set max page count of this album
             option.setProductMinPageCount(20);// set min page count of this album
             TapsbookSDK.launchTapsbook(this, assets, App.getInstance(), option);

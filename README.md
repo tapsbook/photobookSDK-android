@@ -63,11 +63,13 @@ TapsbookSDK.launchTapsbook(currentActivity, assets);
 TapsbookSDK provides lots of config options so you can easily configure what kind of books you want your users to build by setting the following global variable
 
 ````
-TapsbookSDK.config.generate.maxNumberOfPages = 40;//set max pages
-TapsbookSDK.config.generate.minNumberOfPages = 20;//set min pages
-TapsbookSDK.config.generate.generateGivenSizeImages = true;//set generate the 800x400 image
-TapsbookSDK.config.generate.isStartPageOnLeft = true; //set album start from left
-TapsbookSDK.config.generate.kTBProductPreferredTheme = 200; //set product theme
+TapsbookSDK.Option option = new TapsbookSDK.Option();
+//now you can set the option for each album
+option.setProductTheme(themeId);// set the given product theme id
+option.setProductSku(sku);// set the given product sku
+option.setStartPageFromLeft(isStartFromLeft);// set album start direction
+option.setProductMaxPageCount(30);// set max page count of this album
+option.setProductMinPageCount(20);// set min page count of this album
 ````
 
 ### Customizing the look and feel

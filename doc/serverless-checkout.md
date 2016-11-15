@@ -34,13 +34,17 @@ option.setPreferredUiDirectionIsRTL(true);// set album start from right
 
 During step 3. You should process the launch method callback which include the page thumbnail file path
 ````
-//
-
-
+TapsbookSDK.launchTapsbook(@NotNull Context context, @NotNull List<Asset> assets, @Nullable TapsbookSDKCallback callback, @Nullable Option option)
 ````
 once this is complete, call the following method to start the final checkout. This async method will return the a dictonary containing the data for you to manufacture the photo book. The dictionary includes a string in “album_JSON” and an array of page image thumbnails in “album_page_thumbnails”. Your app can then sends these data to your backend for final processing.
 ````
-
+/**
+ *
+ * @param key the key
+ * @param item service needed content
+ * @param imagePaths array of page image thumbnails
+ */
+void complete(String key, LineItem item, List<String> imagePaths);
 ````
 
 During step 5. Your backend server should load the order JSON and uploaded images to process the final print output for final production.  The JSON format sample and reference can be found below.

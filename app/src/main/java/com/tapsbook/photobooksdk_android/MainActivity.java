@@ -24,7 +24,7 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
 
     private long themeId = 200;
     private String sku = "1004";
-    private boolean isStartFromLeft = false;
+    private boolean isStartFromLeft = true;
     private boolean isRTL = false;
 
     @Override

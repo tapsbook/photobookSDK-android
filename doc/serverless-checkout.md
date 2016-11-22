@@ -17,11 +17,6 @@ In this private deployment option, (number here refers to the diagram above)
 ## Integration details
 You should follow the integration steps as documented for [TBSDKAlbumManager](http://tapsbook.com/doc/Classes/TBSDKAlbumManager.html), e.g. prepare the TBImages etc, plus also perform the following additional preparation steps.
 
-To enable this workflow, set the SDK configurator as the following
-````
-TapsbookSDK.config.generate.generateGivenSizeImages = true;//set generate the 800x400 image
-````
-
 During step 1, because your backend will manage the product SKU, your app should implement your product picker to let user pick a product (SKU) and this SKU needs also be provisioned in the TapsbookSDK's database through a customization step.  Finally you pass this SKU and other product custoimzation as an albumOption to SDK  
 ````
 TapsbookSDK.Option option = new TapsbookSDK.Option();
@@ -29,18 +24,21 @@ option.setProductTheme(200);// set the given product theme id
 option.setProductSku("1300");// set the given product sku
 option.setProductMaxPageCount(30);// set max page count of this album
 option.setProductMinPageCount(20);// set min page count of this album
-option.setPreferredUiDirectionIsRTL(true);// set album start from right
+option.setStartPageFromLeft(isStartFromLeft);// set album start direction
+option.setPreferredUiDirectionIsRTL(isRTL);// set ui direction
+option.setNeedAlbumTitle(isNeedAlbumTitle);// set whether force user to add album title
+option.setUseExternalCheckout(useExternalCheckout);// set whether use your own checkout
 ````
 
 During step 3. You should process the launch method callback which include the page thumbnail file path
 ````
-TapsbookSDK.launchTapsbook(@NotNull Context context, @NotNull List<Asset> assets, @Nullable TapsbookSDKCallback callback, @Nullable Option option)
+TapsbookSDK.launchTapsbook(@NotNull Activity activity, @NotNull List<Asset> assets, @Nullable TapsbookSDKCallback callback, @Nullable Option option)
 ````
 once this is complete, call the following method to start the final checkout. This async method will return the a dictonary containing the data for you to manufacture the photo book. The dictionary includes a string in “album_JSON” and an array of page image thumbnails in “album_page_thumbnails”. Your app can then sends these data to your backend for final processing.
 ````
 /**
  *
- * @param key the key
+ * @param key the order number(if necessary)
  * @param item service needed content
  * @param imagePaths array of page image thumbnails
  */

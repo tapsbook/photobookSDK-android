@@ -18,7 +18,7 @@
     <TextView
         android:layout_width="324dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="50dp"
         android:fontFamily="sans-serif-thin"
         android:padding="24dp"
         android:text="@string/sdk_welcome"
@@ -48,6 +48,21 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:text="Is UI direction RTL?" />
+
+    <Switch
+        android:id="@+id/sw_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:checked="true"
+        android:text="Force user to add album title?" />
+
+    <Switch
+        android:id="@+id/sw_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Use external checkout?" />
 
     <RadioGroup
         android:id="@+id/radio_group"

@@ -21,7 +21,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AlbumListActivity"></activity>
+        <activity android:name=".AlbumListActivity" />
+        <activity android:name=".CheckoutActivity"></activity>
     </application>
 
 </manifest>

@@ -26,6 +26,8 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
     private String sku = "1004";
     private boolean isStartFromLeft = true;
     private boolean isRTL = false;
+    private boolean isNeedAlbumTitle = true;
+    private boolean useExternalCheckout = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,10 +39,14 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
     private void initView() {
         RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radio_group);
         radioGroup.setOnCheckedChangeListener(this);
-        Switch sw = (Switch) findViewById(R.id.sw_1);
-        Switch swRTL = (Switch) findViewById(R.id.sw_2);
-        sw.setOnCheckedChangeListener(this);
-        swRTL.setOnCheckedChangeListener(this);
+        Switch sw1 = (Switch) findViewById(R.id.sw_1);
+        Switch sw2 = (Switch) findViewById(R.id.sw_2);
+        Switch sw3 = (Switch) findViewById(R.id.sw_3);
+        Switch sw4 = (Switch) findViewById(R.id.sw_4);
+        sw1.setOnCheckedChangeListener(this);
+        sw2.setOnCheckedChangeListener(this);
+        sw3.setOnCheckedChangeListener(this);
+        sw4.setOnCheckedChangeListener(this);
     }
 
     @Override
@@ -69,6 +75,12 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
                 break;
             case R.id.sw_2:
                 isRTL = isChecked;
+                break;
+            case R.id.sw_3:
+                isNeedAlbumTitle = isChecked;
+                break;
+            case R.id.sw_4:
+                useExternalCheckout = isChecked;
                 break;
         }
     }
@@ -104,9 +116,11 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
             option.setProductSku(sku);// set the given product sku
             option.setStartPageFromLeft(isStartFromLeft);// set album start direction
             option.setPreferredUiDirectionIsRTL(isRTL);// set ui direction
+            option.setNeedAlbumTitle(isNeedAlbumTitle);// set whether force user to add album title
+            option.setUseExternalCheckout(useExternalCheckout);// set whether use your own checkout
             option.setProductMaxPageCount(30);// set max page count of this album
             option.setProductMinPageCount(20);// set min page count of this album
-            TapsbookSDK.launchTapsbook(this, assets, App.getInstance(), option);
+            TapsbookSDK.launchTapsbook(MainActivity.this, assets, App.getInstance(), option);
         } else {
             Toast.makeText(this, "Please make sure you have some favorite photos ", Toast.LENGTH_SHORT).show();
         }

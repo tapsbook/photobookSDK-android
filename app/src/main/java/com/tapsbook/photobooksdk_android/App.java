@@ -1,9 +1,11 @@
 package com.tapsbook.photobooksdk_android;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Handler;
 import android.support.multidex.MultiDex;
 import android.support.multidex.MultiDexApplication;
+import android.text.TextUtils;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
@@ -55,22 +57,36 @@ public class App extends MultiDexApplication implements TapsbookSDKCallback {
 
     @Override
     public void complete(String s, LineItem lineItem, List<String> imagePaths) {
-        if (null != imagePaths && imagePaths.size() != 0) {
-            String path = imagePaths.get(0);
-            File file = new File(path);
-            if (file.exists()) {
-                String parent = file.getParent();
-                Toast.makeText(this, "images save in file " + parent, Toast.LENGTH_LONG).show();
+        // this method will be called when you generate images success or upload images success,
+        // so you can do something with current album like:
+        // use this method to make album ordered
+        AlbumManager.getInstance().getCurrentAlbum().setIsOrdered(true);
+        AlbumManager.getInstance().saveCurrentAlbum();
+
+        if (!TextUtils.isEmpty(s)) {
+            // if s is not null,means you will use your own checkout view
+            // and you have been set the true of the option useExternalCheckout
+            Intent intent = new Intent(this, CheckoutActivity.class);
+            intent.putExtra(CheckoutActivity.EXTRA_NUMBER, s);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+        } else {
+            if (null != imagePaths && imagePaths.size() != 0) {
+                String path = imagePaths.get(0);
+                File file = new File(path);
+                if (file.exists()) {
+                    String parent = file.getParent();
+                    Toast.makeText(this, "images save in file " + parent, Toast.LENGTH_LONG).show();
+                }
             }
+
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    saveJson();
+                }
+            }).start();
         }
-
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                saveJson();
-            }
-        }).start();
-
     }
 
     private void saveJson() {

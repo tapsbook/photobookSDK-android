@@ -2,6 +2,12 @@
 
 If you run into any issues, please contact help at tapsbook.com
 
+Nov 22 Version 2.0
+- [editing] replace all methods start with `launchTapsbook(Context context, Xxx xxx)` to `launchTapsbook(Activity activity, Xxx xxx)`
+- [core] added sdk option `setNeedAlbumTitle()`
+- [core] added sdk option `setUseExternalCheckout()`
+- [editing] update database
+
 July 29 Build 108
 - [editing] added usage analytics tracking tool
 - [editing] added gesture based page layout switching tool

@@ -1,6 +1,12 @@
 ## Update of Tapsbook SDK for Android
 
-If you run into any issues, please contact help at tapsbook.com
+If you run into any issues, please contact help at tapsbook.com/TeamBition
+
+Nov 23 Version 2.0.1
+- [editing] modify demo app gradle,please follow it
+- [editing] translate android sdk with supply file
+- [bug fix] EXIF information lost exception
+- [bug fix] multi page images show with right Cropped
 
 Nov 22 Version 2.0
 - [editing] replace all methods start with `launchTapsbook(Context context, Xxx xxx)` to `launchTapsbook(Activity activity, Xxx xxx)`

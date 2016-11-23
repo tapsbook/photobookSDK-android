@@ -23,8 +23,8 @@ android {
         applicationId "com.tapsbook.photobooksdk_android"
         minSdkVersion 17
         targetSdkVersion 22
-        versionCode 4
-        versionName "1.4"
+        versionCode 5
+        versionName "1.5"
         multiDexEnabled true
     }
     buildTypes {
@@ -40,24 +40,31 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    apt 'com.raizlabs.android:DBFlow-Compiler:2.1.0'
     compile project(':library-release')
     compile project(':opencv-release')
     compile project(':androidgesturedetectorslib-release')
+
+    //android support
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.android.support:recyclerview-v7:23.1.1'
     compile 'com.android.support:design:23.1.1'
+    //gms
     compile 'com.google.android.gms:play-services:8.4.0'
-    compile 'com.jakewharton:butterknife:7.0.1'
+    //qiniu cloud,for uploading images
+    compile 'com.qiniu:qiniu-android-sdk:7.0.6'
+    //database
+    apt 'com.raizlabs.android:DBFlow-Compiler:2.1.0'
     compile 'com.raizlabs.android:DBFlow-Core:2.1.0'
     compile 'com.raizlabs.android:DBFlow:2.1.0'
-    compile 'com.qiniu:qiniu-android-sdk:7.0.6'
+    //crop view
     compile 'com.theartofdev.edmodo:android-image-cropper:2.3.1'
-    compile 'com.github.bumptech.glide:glide:3.6.1'
-    compile 'com.google.code.gson:gson:2.3'
-    compile 'com.booking:rtlviewpager:1.0.0@aar'
-    compile 'com.android.support:multidex:1.0.1'
+    //Fabric,collect crash reports
     compile('com.crashlytics.sdk.android:crashlytics:2.5.2@aar') {
         transitive = true;
     }
+    //etc
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.google.code.gson:gson:2.3'
+    compile 'com.android.support:multidex:1.0.1'
 }

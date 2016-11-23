@@ -35,6 +35,8 @@ dependencies {
     compile 'com.raizlabs.android:DBFlow:2.2.1'
     compile 'com.github.bumptech.glide:glide:3.6.1'
     compile 'com.google.android.gms:play-services:7.5.0'
+    compile 'com.theartofdev.edmodo:android-image-cropper:2.3.1'
+
 
 }
 ```

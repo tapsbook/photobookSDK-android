@@ -28,13 +28,13 @@ dependencies {
     compile('com.crashlytics.sdk.android:crashlytics:2.5.2@aar') { //for crashlytics
             transitive = true;
     }
-    compile 'com.android.support:recyclerview-v7:21.0.0'
-    compile 'com.jakewharton:butterknife:6.1.0'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'com.jakewharton:butterknife:7.0.1'
     apt 'com.raizlabs.android:DBFlow-Compiler:2.2.1'
     compile 'com.raizlabs.android:DBFlow-Core:2.2.1'
     compile 'com.raizlabs.android:DBFlow:2.2.1'
     compile 'com.github.bumptech.glide:glide:3.6.1'
-    compile 'com.google.android.gms:play-services:7.5.0'
+    compile 'com.google.android.gms:play-services:8.4.0'
     compile 'com.theartofdev.edmodo:android-image-cropper:2.3.1'
 
 
@@ -70,6 +70,9 @@ TapsbookSDK.Option option = new TapsbookSDK.Option();
 option.setProductTheme(themeId);// set the given product theme id
 option.setProductSku(sku);// set the given product sku
 option.setStartPageFromLeft(isStartFromLeft);// set album start direction
+option.setPreferredUiDirectionIsRTL(isRTL);// set ui direction
+option.setNeedAlbumTitle(isNeedAlbumTitle);// set whether force user to add album title
+option.setUseExternalCheckout(useExternalCheckout);// set whether use your own checkout view
 option.setProductMaxPageCount(30);// set max page count of this album
 option.setProductMinPageCount(20);// set min page count of this album
 ````

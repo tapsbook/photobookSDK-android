@@ -2,6 +2,10 @@
 
 If you run into any issues, please contact help at tapsbook.com/TeamBition
 
+Nov 24 Version 2.0.2
+- [bug fix] wrong order payment state
+- [bug fix] multi page crash issue
+
 Nov 23 Version 2.0.1
 - [editing] modify demo app gradle,please follow it
 - [editing] translate android sdk with supply file

@@ -2,6 +2,10 @@
 
 If you run into any issues, please contact help at tapsbook.com/TeamBition
 
+Nov 28 Version 2.0.3
+- [bug fix] add missing translate
+- [bug fix] wrong tips show position
+
 Nov 24 Version 2.0.2
 - [bug fix] wrong order payment state
 - [bug fix] multi page crash issue

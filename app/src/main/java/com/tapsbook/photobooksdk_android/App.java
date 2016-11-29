@@ -8,11 +8,9 @@ import android.support.multidex.MultiDexApplication;
 import android.text.TextUtils;
 import android.widget.Toast;
 
-import com.google.gson.Gson;
 import com.tapsbook.sdk.AlbumManager;
 import com.tapsbook.sdk.TapsbookSDK;
 import com.tapsbook.sdk.TapsbookSDKCallback;
-import com.tapsbook.sdk.model.Album;
 import com.tapsbook.sdk.services.domain.LineItem;
 
 import java.io.File;
@@ -20,9 +18,9 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
-
-import static android.R.attr.path;
 
 public class App extends MultiDexApplication implements TapsbookSDKCallback {
     private final static String ASSETS_ROOT_PATH = "file:///android_asset/";
@@ -56,18 +54,18 @@ public class App extends MultiDexApplication implements TapsbookSDKCallback {
     }
 
     @Override
-    public void complete(String s, LineItem lineItem, List<String> imagePaths) {
+    public void complete(String orderNumber, LineItem lineItem, List<String> imagePaths) {
         // this method will be called when you generate images success or upload images success,
         // so you can do something with current album like:
         // use this method to make album ordered
         AlbumManager.getInstance().getCurrentAlbum().setIsOrdered(true);
         AlbumManager.getInstance().saveCurrentAlbum();
 
-        if (!TextUtils.isEmpty(s)) {
-            // if s is not null,means you will use your own checkout view
+        if (!TextUtils.isEmpty(orderNumber)) {
+            // if orderNumber is not null,means you will use your own checkout view
             // and you have been set the true of the option useExternalCheckout
             Intent intent = new Intent(this, CheckoutActivity.class);
-            intent.putExtra(CheckoutActivity.EXTRA_NUMBER, s);
+            intent.putExtra(CheckoutActivity.EXTRA_NUMBER, orderNumber);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
         } else {
@@ -79,48 +77,52 @@ public class App extends MultiDexApplication implements TapsbookSDKCallback {
                     Toast.makeText(this, "images save in file " + parent, Toast.LENGTH_LONG).show();
                 }
             }
-
-            new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    saveJson();
-                }
-            }).start();
         }
+
+        String json = AlbumManager.getInstance().getCurrentAlbumJSON();
+        saveJson(json);
     }
 
-    private void saveJson() {
-        Gson gson = new Gson();
-        // get current album json data
-        Album currentAlbum = AlbumManager.getInstance().getCurrentAlbum();
-        String json = gson.toJson(currentAlbum);
-        byte[] txt = json.getBytes();
+    @Override
+    public void saveComplete(String albumId) {
+        //this method will be called when you click 'save&exit' button in editor view
+        String albumJSON = AlbumManager.getInstance().getAlbumJSONByAlbumID(albumId);
+        saveJson(albumJSON);
+    }
 
-        try {
-            File path = new File("/mnt/sdcard/Tapsbook");
-            File f = new File("/mnt/sdcard/Tapsbook/album.json");
-            if (!path.exists()) {
-                path.mkdirs();
-            }
-            if (!f.exists()) {
-                f.createNewFile();
-            }
-            OutputStream os = new FileOutputStream(f);
-            os.write(txt);
-            os.flush();
-            os.close();
-
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            handler.post(new Runnable() {
-                @Override
-                public void run() {
-                    Toast.makeText(App.getInstance(), "saved /mnt/sdcard/Tapsbook/album.json", Toast.LENGTH_SHORT).show();
+    private void saveJson(final String json) {
+        SimpleDateFormat format = new SimpleDateFormat("yy-MM-dd HH-mm-ss");
+        final String time = format.format(new Date());
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                byte[] txt = json.getBytes();
+                try {
+                    File path = new File("/mnt/sdcard/Tapsbook");
+                    File f = new File("/mnt/sdcard/Tapsbook/" + time + ".json");
+                    if (!path.exists()) {
+                        path.mkdirs();
+                    }
+                    if (!f.exists()) {
+                        f.createNewFile();
+                    }
+                    OutputStream os = new FileOutputStream(f);
+                    os.write(txt);
+                    os.flush();
+                    os.close();
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } finally {
+                    handler.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toast.makeText(App.getInstance(), "saved in /mnt/sdcard/Tapsbook/" + time + ".json", Toast.LENGTH_SHORT).show();
+                        }
+                    });
                 }
-            });
-        }
+            }
+        }).start();
     }
 }

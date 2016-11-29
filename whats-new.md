@@ -2,6 +2,10 @@
 
 If you run into any issues, please contact help at tapsbook.com/TeamBition
 
+Nov 29 Version 2.0.4
+- [core] add new method `saveComplete(String albumId)` in `TapsbookSDKCallback`
+- [bug fix] click `order` button crash issue
+
 Nov 28 Version 2.0.3
 - [bug fix] add missing translate
 - [bug fix] wrong tips show position

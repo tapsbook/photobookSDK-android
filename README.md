@@ -41,12 +41,13 @@ dependencies {
 
 ### Integration
 
-Integrating TapsbookSDK to your android project is as simple as 1-2-3-4
+Integrating TapsbookSDK to your android project is as simple as 1-2-3-4-5
 
 1. Feed the photos as Photo Asset to SDK
 2. Show the photo book editor in the SDK to let user create a photo book
-3. Only Click the `print` button,SDK will generated the page images for production and the `TapsbookSDKCallback` will be called
-4. Get the json data of current Album please called `AlbumManager.getInstance().getCurrentAlbumJson()`
+3. If you have set `TapsbookSDKCallback` in method `TapsbookSDK.launchTapsbook`,when user click `order` button,SDK will generated the page images for production and the callback's method `complete()` will be called,if user click `save&exit` button,SDK will save current album in database and the callback's method `saveComplete()` will be called
+4. In method `complete()` it return `orderNumber, LineItem, imagePaths`,you can use them to handle your order,and you can get album json data by `AlbumManager.getInstance().getCurrentAlbumJSON()`
+5. In method `saveComplete()` it return `albumId`,you can use it to get album json data by `AlbumManager.getInstance().getAlbumJSONByAlbumID(albumId)`
 
 The following code snippet shows how an Android app can add the photo book functions
 
@@ -96,8 +97,10 @@ AlbumManager.getInstance().deleteCurrentAlbum(String albumId)
 AlbumManager.getInstance().getCurrentAlbum()
 
 //get currentAlbumJson
-AlbumManager.getInstance().getCurrentAlbumJson()
-ml
+AlbumManager.getInstance().getCurrentAlbumJSON()
+
+//gwt currentAlbumJson by album id
+AlbumManager.getInstance().getAlbumJSONByAlbumID(albumId)
 ```
 
 ### Documentation

@@ -36,29 +36,29 @@ dependencies {
     compile 'com.github.bumptech.glide:glide:3.6.1'
     compile 'com.google.android.gms:play-services:8.4.0'
     compile 'com.theartofdev.edmodo:android-image-cropper:2.3.1'
-
-
 }
 ```
 
 ### Integration
 
-Integrating TapsbookSDK to your android project is as simple as 1-2-3
+Integrating TapsbookSDK to your android project is as simple as 1-2-3-4
 
 1. Feed the photos as Photo Asset to SDK
 2. Show the photo book editor in the SDK to let user create a photo book
-3. Take the SDK generated JSON page object or SDK generated page images for production.
+3. Only Click the `print` button,SDK will generated the page images for production and the `TapsbookSDKCallback` will be called
+4. Get the json data of current Album please called `AlbumManager.getInstance().getCurrentAlbumJson()`
 
 The following code snippet shows how an Android app can add the photo book functions
-````
+
+```
 ArrayList<Asset> assets = new ArrayList<>();
 for (String photoLocalPath: myPhotos) {
     Asset photoAsset = new Asset();
     photoAsset.originPath = photoLocalPath;
     assets.add(photoAsset)
 }
-TapsbookSDK.launchTapsbook(currentActivity, assets);
-````
+TapsbookSDK.launchTapsbook(currentActivity, assets, callback, option);
+```
 
 ### Configuration
 
@@ -95,10 +95,13 @@ AlbumManager.getInstance().deleteCurrentAlbum(String albumId)
 //get currentAlbum
 AlbumManager.getInstance().getCurrentAlbum()
 
+//get currentAlbumJson
+AlbumManager.getInstance().getCurrentAlbumJson()
+ml
 ```
 
 ### Documentation
-The full JavaDoc of the TapsbookSDK android version can be found here: http://tapsbook.com/doc-android/index.html?com/tapsbook/sdk/TapsbookSDK.html
+The full JavaDoc of the TapsbookSDK android version can be found here:  `http://tapsbook.com/doc-android/index.html?com/tapsbook/sdk/TapsbookSDK.html`
 
 
 ### Backend and Fulfillment options
@@ -108,14 +111,14 @@ Two options:
 1. Use TapsbookSDK built in backend and integrated vendors
 2. Use your own print workflow
 
-TapsbookSDK has built its world wide network of print partners serving AP, Europe and North America markets, and this will be your quickest option to create a turnkey photo merchandising solution.. In the default mode, the SDK connects to the backend system via REST API to manage the product SKUs and photo book printing workflow by working with our photo book print partners and shipping service providers to offer you 
+TapsbookSDK has built its world wide network of print partners serving AP, Europe and North America markets, and this will be your quickest option to create a turnkey photo merchandising solution.. In the default mode, the SDK connects to the backend system via REST API to manage the product SKUs and photo book printing workflow by working with our photo book print partners and shipping service providers to offer you
 
 To get started using the first option, you will need to:
 
 1. Sign up for a free tapsBook developer account: Go to http://dashboard.tapsbook.com to sign up.(invitation only, shoot us an email support@tapsbook.com)
 2. Register your app and get an app key.
 
-*What if you have your own print workflow and print facility?* No worries! The key design philosophy of TapsbookSDK is OPEN! TapsbookSDK can be easily integrated with exiting modern printing workflow quickly. TapsbookSDK allows many top print companies to create their own branded photo book mobile apps that connets to their own fulfillment capabilities. 
+*What if you have your own print workflow and print facility?* No worries! The key design philosophy of TapsbookSDK is OPEN! TapsbookSDK can be easily integrated with exiting modern printing workflow quickly. TapsbookSDK allows many top print companies to create their own branded photo book mobile apps that connets to their own fulfillment capabilities.
 
 ### Other platforms
 
@@ -124,5 +127,3 @@ TapsbookSDK also has its iOS sibling, [TapsbookSDK for iOS](https://github.com/t
 ### Contact us
 
 Our team is based in Raleigh, NC and office in Beijing and Xian in China. We love to hear from you, drop us an email support@tapsbook.com
-
-

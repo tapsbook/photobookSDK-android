@@ -2,6 +2,9 @@
 
 If you run into any issues, please contact help at tapsbook.com/TeamBition
 
+Nov 30 Version 2.0.5
+- [core] change `Add` button logic in SDK editor view
+
 Nov 29 Version 2.0.4
 - [core] add new method `saveComplete(String albumId)` in `TapsbookSDKCallback`
 - [bug fix] click `order` button crash issue

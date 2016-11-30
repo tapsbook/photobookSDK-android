@@ -35,10 +35,14 @@ public class App extends MultiDexApplication implements TapsbookSDKCallback {
     @Override
     public void onCreate() {
         super.onCreate();
-        TapsbookSDK.initialize("REPLACE_ME", this);
+        instance = this;
+        //init SDK
+        TapsbookSDK.initialize("REPLACE_ME", this, AddPhotoActivity.class);
+        //this init method will not show the add button in editor view
+        //TapsbookSDK.initialize("REPLACE_ME", this);
+
         //this method will set display logo and print logo
         TapsbookSDK.setAppLogo(ASSETS_ROOT_PATH + "logo_display.png", "");
-        instance = this;
     }
 
     @Override

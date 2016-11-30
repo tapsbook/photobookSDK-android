@@ -22,7 +22,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".AlbumListActivity" />
-        <activity android:name=".CheckoutActivity"></activity>
+        <activity android:name=".CheckoutActivity" />
+        <activity android:name=".AddPhotoActivity" />
     </application>
 
 </manifest>

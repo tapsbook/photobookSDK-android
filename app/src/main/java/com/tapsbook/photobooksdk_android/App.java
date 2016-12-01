@@ -37,7 +37,7 @@ public class App extends MultiDexApplication implements TapsbookSDKCallback {
         super.onCreate();
         instance = this;
         //init SDK
-        TapsbookSDK.initialize("REPLACE_ME", this, AddPhotoActivity.class);
+        TapsbookSDK.initialize("REPLACE_ME", this, PhotoPickerActivity.class);
         //this init method will not show the add button in editor view
         //TapsbookSDK.initialize("REPLACE_ME", this);
 

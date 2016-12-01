@@ -3,7 +3,6 @@ package com.tapsbook.photobooksdk_android;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.AssetManager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
@@ -17,14 +16,14 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AddPhotoActivity extends Activity {
+public class PhotoPickerActivity extends Activity {
 
     private List<String> usedPhotoList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_photo);
+        setContentView(R.layout.activity_photo_picker);
         initIntent();
     }
 

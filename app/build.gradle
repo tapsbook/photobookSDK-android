@@ -23,8 +23,8 @@ android {
         applicationId "com.tapsbook.photobooksdk_android"
         minSdkVersion 17
         targetSdkVersion 22
-        versionCode 8
-        versionName "2.0.5"
+        versionCode 9
+        versionName "2.0.6"
         multiDexEnabled true
     }
     buildTypes {

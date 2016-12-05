@@ -2,6 +2,9 @@
 
 If you run into any issues, please contact help at tapsbook.com/TeamBition
 
+Dec 5  Version 2.0.6
+- [bug fix] generate images crash issue
+
 Nov 30 Version 2.0.5
 - [core] change `Add` button logic in SDK editor view
 

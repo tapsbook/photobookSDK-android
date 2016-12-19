@@ -2,6 +2,9 @@
 
 If you run into any issues, please contact help at tapsbook.com/TeamBition
 
+Dec 19  Version 2.0.7
+- [bug fix] generate images oom issue
+
 Dec 5  Version 2.0.6
 - [bug fix] generate images crash issue
 

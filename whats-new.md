@@ -2,6 +2,9 @@
 
 If you run into any issues, please contact help at tapsbook.com/TeamBition
 
+Jan 2 Version 2.0.8
+- [bug fix] external checkout should generate preview images
+
 Dec 19  Version 2.0.7
 - [bug fix] generate images oom issue
 

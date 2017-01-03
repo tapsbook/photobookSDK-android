@@ -78,7 +78,7 @@ public class App extends MultiDexApplication implements TapsbookSDKCallback {
                 File file = new File(path);
                 if (file.exists()) {
                     String parent = file.getParent();
-                    Toast.makeText(this, "images save in file " + parent, Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, "Page preview images saved in folder " + parent, Toast.LENGTH_LONG).show();
                 }
             }
         }
